@@ -1,0 +1,201 @@
+DAY,MONTH,YEAR,Student_Roll,DEPARTMENT_No,COLLEGE_NAME,COURSE_NAME,FACULTY_NAME,RESULT_MARKS
+1,1,2025,912307252,104,Theta Design Academy,Mechanical Engineering,Leena Desai,90
+2,1,2025,543872930,104,Beta Engineering College,Chemical Engineering,Sneha Das,40
+3,1,2025,829026544,103,Gamma Arts College,Civil Engineering,Priya Mehta,80
+4,1,2025,219270881,109,Gamma Arts College,Data Science,Priya Mehta,70
+5,1,2025,345485455,108,Eta Polytechnic,Civil Engineering,Priya Mehta,73
+6,1,2025,710272001,101,Beta Engineering College,Electrical Engineering,Kavita Jain,86
+7,1,2025,757406011,101,Gamma Arts College,Biotechnology,Leena Desai,88
+8,1,2025,462272745,103,Epsilon Medical Institute,Biotechnology,Sneha Das,40
+9,1,2025,470677855,109,Theta Design Academy,Physics,Priya Mehta,58
+10,1,2025,226036333,106,Beta Engineering College,Electrical Engineering,Ananya Roy,63
+11,1,2025,686784749,107,Beta Engineering College,Data Science,Asha Sharma,95
+12,1,2025,131289025,104,Iota Technical College,Mathematics,Priya Mehta,58
+13,1,2025,608537429,104,Beta Engineering College,Electrical Engineering,Arun Singh,91
+14,1,2025,187425450,108,Epsilon Medical Institute,AI & Machine Learning,Ravi Gupta,94
+15,1,2025,220809372,110,Iota Technical College,Electrical Engineering,Sneha Das,73
+16,1,2025,933065203,101,Eta Polytechnic,Biotechnology,Ravi Gupta,43
+17,1,2025,167158323,105,Kappa Law School,Physics,Priya Mehta,62
+18,1,2025,591036295,110,Epsilon Medical Institute,Data Science,Leena Desai,84
+19,1,2025,605467445,106,Delta Science University,Chemical Engineering,Ananya Roy,48
+20,1,2025,512659234,104,Epsilon Medical Institute,Civil Engineering,Kavita Jain,45
+21,1,2025,394046318,101,Beta Engineering College,Electrical Engineering,Leena Desai,72
+22,1,2025,370386947,108,Beta Engineering College,Mechanical Engineering,Ravi Gupta,48
+23,1,2025,334353077,105,Alpha Institute of Technology,Computer Science,Sneha Das,96
+24,1,2025,603622181,103,Beta Engineering College,Civil Engineering,Rajan Patel,80
+25,1,2025,539377170,107,Epsilon Medical Institute,Electrical Engineering,Vinay Kulkarni,90
+26,1,2025,576729245,101,Zeta Management School,Biotechnology,Rajan Patel,68
+27,1,2025,243308628,103,Zeta Management School,Data Science,Kavita Jain,58
+28,1,2025,222439041,102,Kappa Law School,Computer Science,Leena Desai,62
+29,1,2025,765943292,106,Gamma Arts College,Data Science,Kavita Jain,97
+30,1,2025,135297365,109,Beta Engineering College,Physics,Arun Singh,78
+31,1,2025,176018582,102,Zeta Management School,Mechanical Engineering,Rajan Patel,92
+1,2,2025,708230756,105,Epsilon Medical Institute,Physics,Rajan Patel,59
+2,2,2025,995543372,110,Beta Engineering College,AI & Machine Learning,Rajan Patel,79
+3,2,2025,180524341,105,Eta Polytechnic,Civil Engineering,Asha Sharma,82
+4,2,2025,420308782,110,Beta Engineering College,Civil Engineering,Ananya Roy,57
+5,2,2025,761285057,105,Beta Engineering College,Chemical Engineering,Kavita Jain,100
+6,2,2025,385544463,104,Alpha Institute of Technology,Mechanical Engineering,Kavita Jain,80
+7,2,2025,354617831,106,Gamma Arts College,AI & Machine Learning,Leena Desai,53
+8,2,2025,800703904,106,Delta Science University,Data Science,Asha Sharma,45
+9,2,2025,755580297,103,Eta Polytechnic,Computer Science,Ravi Gupta,97
+10,2,2025,473023021,101,Theta Design Academy,AI & Machine Learning,Sneha Das,42
+11,2,2025,430847267,105,Delta Science University,Mechanical Engineering,Arun Singh,92
+12,2,2025,714267136,104,Iota Technical College,AI & Machine Learning,Leena Desai,46
+13,2,2025,217716184,108,Kappa Law School,AI & Machine Learning,Arun Singh,52
+14,2,2025,337788229,110,Zeta Management School,Data Science,Arun Singh,41
+15,2,2025,945771503,109,Eta Polytechnic,Electrical Engineering,Rajan Patel,53
+16,2,2025,752430528,104,Eta Polytechnic,AI & Machine Learning,Ravi Gupta,92
+17,2,2025,273597289,108,Epsilon Medical Institute,Computer Science,Rajan Patel,80
+18,2,2025,714531134,109,Theta Design Academy,AI & Machine Learning,Ananya Roy,93
+19,2,2025,455275685,110,Zeta Management School,Electrical Engineering,Priya Mehta,64
+20,2,2025,434193447,106,Kappa Law School,Electrical Engineering,Leena Desai,67
+21,2,2025,966279674,110,Delta Science University,Physics,Ananya Roy,73
+22,2,2025,103458169,109,Gamma Arts College,Chemical Engineering,Kavita Jain,94
+23,2,2025,475145873,102,Epsilon Medical Institute,Physics,Rajan Patel,66
+24,2,2025,919366760,108,Beta Engineering College,Civil Engineering,Priya Mehta,92
+25,2,2025,669258241,109,Gamma Arts College,Civil Engineering,Priya Mehta,46
+26,2,2025,290407941,102,Zeta Management School,Data Science,Ananya Roy,51
+27,2,2025,431462899,105,Iota Technical College,Data Science,Ravi Gupta,52
+28,2,2025,339016902,108,Delta Science University,Mechanical Engineering,Ananya Roy,86
+1,3,2025,281608339,101,Kappa Law School,Data Science,Vinay Kulkarni,76
+2,3,2025,318804814,103,Kappa Law School,AI & Machine Learning,Priya Mehta,96
+3,3,2025,278234089,104,Eta Polytechnic,Civil Engineering,Rajan Patel,67
+4,3,2025,789804110,103,Gamma Arts College,Computer Science,Vinay Kulkarni,62
+5,3,2025,973323374,101,Delta Science University,Civil Engineering,Ravi Gupta,76
+6,3,2025,403395995,105,Epsilon Medical Institute,Physics,Priya Mehta,56
+7,3,2025,858183090,110,Kappa Law School,Civil Engineering,Leena Desai,41
+8,3,2025,108049007,106,Zeta Management School,Chemical Engineering,Priya Mehta,58
+9,3,2025,894024188,109,Zeta Management School,Mathematics,Ravi Gupta,63
+10,3,2025,294538608,104,Kappa Law School,Mechanical Engineering,Sneha Das,52
+11,3,2025,488146494,109,Kappa Law School,Data Science,Leena Desai,63
+12,3,2025,108689619,108,Theta Design Academy,Data Science,Vinay Kulkarni,45
+13,3,2025,296246580,103,Iota Technical College,Mechanical Engineering,Ravi Gupta,55
+14,3,2025,140331632,107,Zeta Management School,Computer Science,Ananya Roy,50
+15,3,2025,222131187,102,Kappa Law School,Civil Engineering,Ananya Roy,91
+16,3,2025,177791457,109,Delta Science University,Chemical Engineering,Arun Singh,93
+17,3,2025,996997996,101,Gamma Arts College,Mechanical Engineering,Priya Mehta,89
+18,3,2025,655295514,109,Alpha Institute of Technology,Physics,Rajan Patel,96
+19,3,2025,176437272,108,Iota Technical College,Civil Engineering,Sneha Das,90
+20,3,2025,694424570,109,Epsilon Medical Institute,Mathematics,Sneha Das,53
+21,3,2025,260606211,105,Theta Design Academy,Biotechnology,Priya Mehta,82
+22,3,2025,649449445,104,Theta Design Academy,Mechanical Engineering,Arun Singh,100
+23,3,2025,780198309,102,Beta Engineering College,Civil Engineering,Arun Singh,71
+24,3,2025,651261336,107,Zeta Management School,Physics,Ananya Roy,80
+25,3,2025,107658058,106,Eta Polytechnic,Computer Science,Rajan Patel,73
+26,3,2025,660271711,109,Eta Polytechnic,AI & Machine Learning,Rajan Patel,49
+27,3,2025,400275530,106,Zeta Management School,Civil Engineering,Arun Singh,51
+28,3,2025,191165945,109,Alpha Institute of Technology,Data Science,Leena Desai,93
+29,3,2025,299130971,110,Kappa Law School,Biotechnology,Asha Sharma,87
+30,3,2025,868601070,104,Gamma Arts College,Electrical Engineering,Rajan Patel,47
+31,3,2025,466807527,102,Iota Technical College,Computer Science,Rajan Patel,41
+1,4,2025,881631330,106,Eta Polytechnic,Mechanical Engineering,Ananya Roy,90
+2,4,2025,344430584,109,Zeta Management School,Computer Science,Ananya Roy,40
+3,4,2025,802594248,104,Gamma Arts College,Computer Science,Sneha Das,43
+4,4,2025,935209511,109,Alpha Institute of Technology,Data Science,Kavita Jain,56
+5,4,2025,101534603,107,Beta Engineering College,Computer Science,Leena Desai,61
+6,4,2025,422931791,109,Alpha Institute of Technology,Electrical Engineering,Vinay Kulkarni,45
+7,4,2025,797246194,107,Theta Design Academy,AI & Machine Learning,Priya Mehta,61
+8,4,2025,639794980,102,Kappa Law School,Computer Science,Leena Desai,89
+9,4,2025,457713221,105,Theta Design Academy,Electrical Engineering,Asha Sharma,45
+10,4,2025,373055642,105,Beta Engineering College,Computer Science,Vinay Kulkarni,79
+11,4,2025,635335465,107,Epsilon Medical Institute,Mathematics,Priya Mehta,76
+12,4,2025,484855344,103,Theta Design Academy,Computer Science,Leena Desai,90
+13,4,2025,544939552,106,Beta Engineering College,Physics,Rajan Patel,68
+14,4,2025,995628017,105,Delta Science University,Biotechnology,Asha Sharma,66
+15,4,2025,262139204,102,Epsilon Medical Institute,AI & Machine Learning,Arun Singh,94
+16,4,2025,375873111,109,Epsilon Medical Institute,Data Science,Priya Mehta,80
+17,4,2025,752041218,104,Beta Engineering College,Mathematics,Rajan Patel,55
+18,4,2025,636707298,110,Epsilon Medical Institute,AI & Machine Learning,Rajan Patel,83
+19,4,2025,122585665,109,Epsilon Medical Institute,Physics,Priya Mehta,86
+20,4,2025,882354371,105,Kappa Law School,Mathematics,Vinay Kulkarni,79
+21,4,2025,330718025,105,Iota Technical College,Mathematics,Vinay Kulkarni,92
+22,4,2025,834556229,107,Delta Science University,Mathematics,Ananya Roy,51
+23,4,2025,886439252,101,Alpha Institute of Technology,Mechanical Engineering,Asha Sharma,66
+24,4,2025,553150323,107,Beta Engineering College,AI & Machine Learning,Rajan Patel,63
+25,4,2025,927465459,106,Iota Technical College,AI & Machine Learning,Ananya Roy,53
+26,4,2025,207278758,109,Eta Polytechnic,Mechanical Engineering,Priya Mehta,98
+27,4,2025,627022043,106,Eta Polytechnic,Electrical Engineering,Ravi Gupta,99
+28,4,2025,745094841,107,Delta Science University,Mechanical Engineering,Sneha Das,40
+29,4,2025,472211604,105,Iota Technical College,Mechanical Engineering,Rajan Patel,89
+30,4,2025,781262631,105,Eta Polytechnic,Physics,Priya Mehta,59
+1,5,2025,319317075,106,Zeta Management School,Electrical Engineering,Kavita Jain,66
+2,5,2025,670871056,106,Theta Design Academy,Physics,Sneha Das,99
+3,5,2025,847453933,105,Iota Technical College,Electrical Engineering,Ananya Roy,86
+4,5,2025,741166199,104,Beta Engineering College,Mathematics,Leena Desai,99
+5,5,2025,227742760,103,Eta Polytechnic,Chemical Engineering,Rajan Patel,71
+6,5,2025,131907111,105,Iota Technical College,Mathematics,Ravi Gupta,96
+7,5,2025,731966932,107,Kappa Law School,Chemical Engineering,Asha Sharma,68
+8,5,2025,829338042,109,Theta Design Academy,Mathematics,Asha Sharma,97
+9,5,2025,605176110,101,Zeta Management School,Mechanical Engineering,Sneha Das,68
+10,5,2025,495177255,103,Zeta Management School,Mechanical Engineering,Sneha Das,93
+11,5,2025,585089174,108,Kappa Law School,Chemical Engineering,Arun Singh,45
+12,5,2025,761330968,105,Beta Engineering College,Data Science,Priya Mehta,49
+13,5,2025,817034257,103,Delta Science University,Civil Engineering,Vinay Kulkarni,75
+14,5,2025,220426676,104,Iota Technical College,AI & Machine Learning,Priya Mehta,67
+15,5,2025,185787789,101,Theta Design Academy,Civil Engineering,Ravi Gupta,44
+16,5,2025,822905432,106,Epsilon Medical Institute,Data Science,Priya Mehta,73
+17,5,2025,564768002,105,Zeta Management School,Physics,Ravi Gupta,66
+18,5,2025,597809468,108,Kappa Law School,Electrical Engineering,Sneha Das,87
+19,5,2025,538179588,110,Beta Engineering College,Electrical Engineering,Ananya Roy,74
+20,5,2025,807155321,110,Alpha Institute of Technology,Electrical Engineering,Arun Singh,94
+21,5,2025,643672844,109,Delta Science University,Biotechnology,Rajan Patel,66
+22,5,2025,361138803,109,Kappa Law School,Civil Engineering,Arun Singh,77
+23,5,2025,330034310,108,Zeta Management School,AI & Machine Learning,Leena Desai,94
+24,5,2025,937839211,103,Beta Engineering College,Data Science,Ananya Roy,56
+25,5,2025,776325033,108,Delta Science University,Chemical Engineering,Asha Sharma,69
+26,5,2025,985104382,109,Theta Design Academy,Biotechnology,Arun Singh,99
+27,5,2025,973157996,104,Theta Design Academy,Electrical Engineering,Leena Desai,83
+28,5,2025,193738590,106,Delta Science University,AI & Machine Learning,Ravi Gupta,100
+29,5,2025,173007123,105,Theta Design Academy,AI & Machine Learning,Ananya Roy,44
+30,5,2025,341541130,108,Eta Polytechnic,Chemical Engineering,Ravi Gupta,43
+31,5,2025,288281184,105,Iota Technical College,Chemical Engineering,Arun Singh,76
+1,6,2025,752128181,101,Iota Technical College,Physics,Kavita Jain,89
+2,6,2025,366062421,105,Eta Polytechnic,Physics,Kavita Jain,94
+3,6,2025,182808852,108,Gamma Arts College,AI & Machine Learning,Ravi Gupta,55
+4,6,2025,883532153,109,Alpha Institute of Technology,Computer Science,Ravi Gupta,79
+5,6,2025,734215232,103,Beta Engineering College,Mathematics,Ravi Gupta,95
+6,6,2025,270719674,104,Gamma Arts College,Chemical Engineering,Leena Desai,73
+7,6,2025,792214759,105,Alpha Institute of Technology,AI & Machine Learning,Asha Sharma,44
+8,6,2025,890508383,101,Zeta Management School,Mechanical Engineering,Ananya Roy,51
+9,6,2025,344956702,109,Alpha Institute of Technology,Computer Science,Ravi Gupta,78
+10,6,2025,400952481,108,Epsilon Medical Institute,Electrical Engineering,Vinay Kulkarni,74
+11,6,2025,444220197,109,Theta Design Academy,Computer Science,Rajan Patel,99
+12,6,2025,841207341,106,Eta Polytechnic,Biotechnology,Arun Singh,71
+13,6,2025,897649910,104,Alpha Institute of Technology,Data Science,Kavita Jain,54
+14,6,2025,583548943,101,Gamma Arts College,Computer Science,Leena Desai,57
+15,6,2025,961630238,106,Kappa Law School,Biotechnology,Ananya Roy,55
+16,6,2025,948404558,103,Epsilon Medical Institute,Civil Engineering,Arun Singh,89
+17,6,2025,668073201,104,Alpha Institute of Technology,Electrical Engineering,Rajan Patel,72
+18,6,2025,929158334,109,Delta Science University,Mathematics,Sneha Das,96
+19,6,2025,715134133,110,Epsilon Medical Institute,Chemical Engineering,Ananya Roy,59
+20,6,2025,310580243,103,Zeta Management School,Chemical Engineering,Asha Sharma,85
+21,6,2025,130138296,105,Gamma Arts College,Electrical Engineering,Arun Singh,53
+22,6,2025,451947880,109,Epsilon Medical Institute,Chemical Engineering,Ananya Roy,99
+23,6,2025,450134126,109,Zeta Management School,Electrical Engineering,Leena Desai,65
+24,6,2025,805398648,101,Alpha Institute of Technology,Data Science,Priya Mehta,89
+25,6,2025,525145510,109,Alpha Institute of Technology,Physics,Kavita Jain,63
+26,6,2025,296580431,105,Delta Science University,Computer Science,Arun Singh,76
+27,6,2025,687171303,102,Eta Polytechnic,Civil Engineering,Arun Singh,81
+28,6,2025,374532982,107,Epsilon Medical Institute,Civil Engineering,Arun Singh,46
+29,6,2025,788296630,104,Beta Engineering College,Computer Science,Priya Mehta,66
+30,6,2025,811347422,106,Iota Technical College,Mechanical Engineering,Ravi Gupta,59
+1,7,2025,374610074,108,Kappa Law School,Chemical Engineering,Asha Sharma,46
+2,7,2025,396015313,107,Zeta Management School,Physics,Sneha Das,54
+3,7,2025,849096871,110,Iota Technical College,Computer Science,Vinay Kulkarni,54
+4,7,2025,500576006,110,Kappa Law School,Data Science,Vinay Kulkarni,66
+5,7,2025,537255501,106,Kappa Law School,Physics,Ananya Roy,50
+6,7,2025,559333396,104,Epsilon Medical Institute,Mechanical Engineering,Priya Mehta,58
+7,7,2025,399675702,102,Epsilon Medical Institute,Computer Science,Leena Desai,40
+8,7,2025,823681484,110,Kappa Law School,Mechanical Engineering,Leena Desai,96
+9,7,2025,784295314,108,Alpha Institute of Technology,Mechanical Engineering,Ananya Roy,74
+10,7,2025,121023103,108,Theta Design Academy,Civil Engineering,Arun Singh,49
+11,7,2025,901773228,101,Eta Polytechnic,Physics,Leena Desai,44
+12,7,2025,403029484,110,Delta Science University,Biotechnology,Kavita Jain,70
+13,7,2025,541627028,108,Gamma Arts College,Chemical Engineering,Leena Desai,75
+14,7,2025,465417958,110,Beta Engineering College,Physics,Sneha Das,73
+15,7,2025,647708675,109,Zeta Management School,Electrical Engineering,Rajan Patel,99
+16,7,2025,120172360,109,Eta Polytechnic,Chemical Engineering,Priya Mehta,85
+17,7,2025,579515081,102,Zeta Management School,Computer Science,Priya Mehta,68
+18,7,2025,511989612,109,Delta Science University,AI & Machine Learning,Sneha Das,72
+19,7,2025,431308322,110,Alpha Institute of Technology,Civil Engineering,Sneha Das,67

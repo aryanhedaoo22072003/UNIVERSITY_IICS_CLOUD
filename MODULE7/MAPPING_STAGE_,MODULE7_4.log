@@ -1,0 +1,2677 @@
+Agent Group Id: 012X3425000000000003
+Agent Group Name: 7de95cd63cc45ef
+Agent Name: 7de95cd63cc45ef
+Agent Id: 012X3408000000000003
+Task Name: MAPPING_STAGE_,MODULE7
+Task Type: MTT_TEST
+Task Id: 012X340Z00000000000E
+Run Id: 4
+Service Id: 1837519
+Started By: aryanhedaoo2003@gmail.com
+Run Context Type: ICS_UI
+04/09/2025 13:02:39 **** Importing Connection: Conn_012X340B00000000000P ...
+04/09/2025 13:02:39 **** Importing Source Definition: CDW_UAS_F_RESULT_CL_AH_txt ...
+04/09/2025 13:02:39 **** Importing Target Definition: CDW_UAS_STG_RESULT ...
+04/09/2025 13:02:39 **** Importing Target Definition: CDW_UAS_ERR ...
+04/09/2025 13:02:39 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  CDW_UAS_F_RESULT_CL_AH_txt...
+    Validating Target Definition  CDW_UAS_ERR...
+    Validating Target Definition  CDW_UAS_STG_RESULT...
+04/09/2025 13:02:39 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Thousand Separator    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Decimal Separator    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Datetime Format    [transformation< Source > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+04/09/2025 13:02:39 **** Importing Workflow: wf_mtt_012X340Z00000000000E ...
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_012X340Z00000000000E > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_012X340Z00000000000E].  Starting repository sequence id is [457412421]
+======================================================================
+DIRECTOR> VAR_27085 [2025-04-09 13:02:40.181] Parameter file [D:\apps\Data_Integration_Server\data\parameters\s_mtt_012X340Z00000000000E.param] is opened for [session [wf_mtt_012X340Z00000000000E.s_mtt_012X340Z00000000000E]].
+DIRECTOR> VAR_27062 [2025-04-09 13:02:40.182] Warning! Cannot find section for worklet [wf_mtt_012X340Z00000000000E] and folder [] in parameter file [D:\apps\Data_Integration_Server\data\parameters\s_mtt_012X340Z00000000000E.param].
+DIRECTOR> TM_6014 [2025-04-09 13:02:40.183] Initializing session [s_mtt_012X340Z00000000000E] at [Wed Apr 09 13:02:40 2025].
+DIRECTOR> TM_6683 [2025-04-09 13:02:40.183] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2025-04-09 13:02:40.183] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2025-04-09 13:02:40.184] Folder: []
+DIRECTOR> TM_6685 [2025-04-09 13:02:40.184] Workflow: [wf_mtt_012X340Z00000000000E] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2025-04-09 13:02:40.184] Operating System Type [NT]
+DIRECTOR> TM_6101 [2025-04-09 13:02:40.184] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2025-04-09 13:02:40.185] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2025-04-09 13:02:40.186] Session [s_mtt_012X340Z00000000000E] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0321].
+MANAGER> PETL_24091 [2025-04-09 13:02:42.301] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2025-04-09 13:02:42.301] Running Partition Group [1].
+MANAGER> PETL_24000 [2025-04-09 13:02:42.301] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2025-04-09 13:02:42.302] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2025-04-09 13:02:42.303] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2025-04-09 13:02:42.303] Initializing session run.
+MAPPING> PETL_24091 [2025-04-09 13:02:42.303] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2025-04-09 13:02:42.305] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2025-04-09 13:02:42.305] Server Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> TM_6151 [2025-04-09 13:02:42.305] The session sort order is [Binary].
+MAPPING> TM_6185 [2025-04-09 13:02:42.305] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65109 [2025-04-09 13:02:42.305] Current Timezone:[UTC +5:30]
+MAPPING> CMN_65111 [2025-04-09 13:02:42.305] Current Process ID:[7092]
+MAPPING> TM_6155 [2025-04-09 13:02:42.306] Using HIGH precision processing.
+MAPPING> TM_6180 [2025-04-09 13:02:42.306] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2025-04-09 13:02:42.306] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2025-04-09 13:02:42.306] DTM error log disabled. 
+MAPPING> TE_7022 [2025-04-09 13:02:42.306] TShmWriter: Initialized
+MAPPING> DBG_21075 [2025-04-09 13:02:42.311] Connecting to database [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa]
+MAPPING> CMN_1021 [2025-04-09 13:02:42.570] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+MAPPING> CMN_1716 [2025-04-09 13:02:42.571] Lookup [student] uses database connection [Relational:Conn_012X340B00000000000P] in code page [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> CMN_1716 [2025-04-09 13:02:42.572] Lookup [college] uses database connection [Relational:Conn_012X340B00000000000P] in code page [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> CMN_1716 [2025-04-09 13:02:42.573] Lookup [Faculty] uses database connection [Relational:Conn_012X340B00000000000P] in code page [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> CMN_1716 [2025-04-09 13:02:42.573] Lookup [Department] uses database connection [Relational:Conn_012X340B00000000000P] in code page [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> CMN_1716 [2025-04-09 13:02:42.574] Lookup [course] uses database connection [Relational:Conn_012X340B00000000000P] in code page [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> CMN_1716 [2025-04-09 13:02:42.574] Lookup [Time] uses database connection [Relational:Conn_012X340B00000000000P] in code page [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> TE_7004 [2025-04-09 13:02:42.575] Transformation Parse Warning [IIF(instr(src_RESULT_MARKS,'$')>0,1,0)]; transformation continues...
+MAPPING> TE_7004 [2025-04-09 13:02:42.575] Transformation Parse Warning [<<PM Parse Warning>> [INSTR]: operand converted to a string
+... IIF(instr(>>>>src_RESULT_MARKS<<<<,'$')>0,1,0)]; transformation continues...
+MAPPING> TM_6007 [2025-04-09 13:02:42.578] DTM initialized successfully for session [s_mtt_012X340Z00000000000E]
+DIRECTOR> PETL_24033 [2025-04-09 13:02:42.579] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2025-04-09 13:02:42.579] Starting pre-session tasks. : (Wed Apr 09 13:02:42 2025)
+PRE-SESS> PETL_24091 [2025-04-09 13:02:42.580] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2025-04-09 13:02:42.646] Pre-session task completed successfully. : (Wed Apr 09 13:02:42 2025)
+DIRECTOR> PETL_24006 [2025-04-09 13:02:42.646] Starting data movement.
+DIRECTOR> TT_11183 [2025-04-09 13:02:42.646] Enabled using [1 (auto)] additional concurrent pipelines to build lookup caches. (Session likely will build or refresh [6] lookup caches; [0] on-demand only).
+MAPPING> TM_6660 [2025-04-09 13:02:42.647] Total Buffer Pool size is 10886904 bytes and Block size is 328088 bytes.
+LKPDP_1> PETL_24091 [2025-04-09 13:02:42.650] Thread [LKPDP_1] has the ID [5].
+LKPDP_1> DBG_21097 [2025-04-09 13:02:42.651] Lookup Transformation [student]: Default sql to create lookup cache: SELECT STUD_ID,STUD_ROLLNO FROM "dbo"."STUDENT_UNIVERSITY_SQL" ORDER BY STUD_ROLLNO
+
+LKPDP_1> TE_7212 [2025-04-09 13:02:42.652] Increasing [Index Cache] size for transformation [student] from [29826161] to [29828400].
+LKPDP_1> TE_7212 [2025-04-09 13:02:42.652] Increasing [Data Cache] size for transformation [student] from [59652322] to [59654144].
+LKPDP_2> PETL_24091 [2025-04-09 13:02:42.665] Thread [LKPDP_2] has the ID [6].
+LKPDP_2> DBG_21097 [2025-04-09 13:02:42.665] Lookup Transformation [college]: Default sql to create lookup cache: SELECT COLLEGE_CODE,COLLEGE_NAME FROM "dbo"."UNI_COLLEGEE" ORDER BY COLLEGE_NAME
+
+LKPDP_2> TE_7212 [2025-04-09 13:02:42.667] Increasing [Index Cache] size for transformation [college] from [29826161] to [29872128].
+LKPDP_2> TE_7212 [2025-04-09 13:02:42.667] Increasing [Data Cache] size for transformation [college] from [59652322] to [59654144].
+LKPDP_3> PETL_24091 [2025-04-09 13:02:42.675] Thread [LKPDP_3] has the ID [7].
+LKPDP_3> DBG_21097 [2025-04-09 13:02:42.676] Lookup Transformation [Faculty]: Default sql to create lookup cache: SELECT FACULTY_CODE,FACULTY_NAME FROM "dbo"."CDW_UAS_D_FACULTY" ORDER BY FACULTY_NAME
+
+LKPDP_3> TE_7212 [2025-04-09 13:02:42.677] Increasing [Index Cache] size for transformation [Faculty] from [29826161] to [29872128].
+LKPDP_3> TE_7212 [2025-04-09 13:02:42.677] Increasing [Data Cache] size for transformation [Faculty] from [59652322] to [59654144].
+LKPDP_4> PETL_24091 [2025-04-09 13:02:42.690] Thread [LKPDP_4] has the ID [8].
+LKPDP_4> DBG_21097 [2025-04-09 13:02:42.690] Lookup Transformation [Department]: Default sql to create lookup cache: SELECT DEPARTMENT_ID,DEPARTMENT_NO FROM "dbo"."CDW_UAS_D_DEPARTMENT" ORDER BY DEPARTMENT_NO
+
+LKPDP_4> TE_7212 [2025-04-09 13:02:42.692] Increasing [Index Cache] size for transformation [Department] from [29826161] to [29828400].
+LKPDP_4> TE_7212 [2025-04-09 13:02:42.692] Increasing [Data Cache] size for transformation [Department] from [59652322] to [59654144].
+LKPDP_5> PETL_24091 [2025-04-09 13:02:42.705] Thread [LKPDP_5] has the ID [9].
+LKPDP_5> DBG_21097 [2025-04-09 13:02:42.705] Lookup Transformation [course]: Default sql to create lookup cache: SELECT COURSE_CODE,MARK_REQ,COURSE_NAME FROM "dbo"."CDW_UAS_D_COURSE" ORDER BY COURSE_NAME
+
+LKPDP_5> TE_7212 [2025-04-09 13:02:42.708] Increasing [Index Cache] size for transformation [course] from [29826161] to [29872128].
+LKPDP_5> TE_7212 [2025-04-09 13:02:42.708] Increasing [Data Cache] size for transformation [course] from [59652322] to [59654144].
+LKPDP_6> PETL_24091 [2025-04-09 13:02:42.716] Thread [LKPDP_6] has the ID [10].
+LKPDP_6> DBG_21097 [2025-04-09 13:02:42.717] Lookup Transformation [Time]: Default sql to create lookup cache: SELECT TIMEID,DAY,MONTH,YEAR FROM "dbo"."CDW_UAS_D_TIME" ORDER BY DAY,MONTH,YEAR
+
+LKPDP_6> TE_7212 [2025-04-09 13:02:42.719] Increasing [Index Cache] size for transformation [Time] from [29826161] to [29832000].
+LKPDP_6> TE_7212 [2025-04-09 13:02:42.719] Increasing [Data Cache] size for transformation [Time] from [59652322] to [59654144].
+DIRECTOR> TT_11184 [2025-04-09 13:02:42.727] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [student].
+LKPDP_1> TM_6660 [2025-04-09 13:02:42.732] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+READER_1_1_1> PETL_24091 [2025-04-09 13:02:42.732] Thread [READER_1_1_1] has the ID [11].
+LKPDP_1:READER_1_1> PETL_24091 [2025-04-09 13:02:42.733] Thread [LKPDP_1:READER_1_1] has the ID [12].
+READER_1_1_1> DBG_21437 [2025-04-09 13:02:42.736] Reader: Source is a file-based source.
+LKPDP_1:READER_1_1> DBG_21438 [2025-04-09 13:02:42.736] Reader: Source is [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa]
+READER_1_1_1> FR_3118 [2025-04-09 13:02:42.736] source [Source] code page: [UTF-8 encoding of Unicode]
+LKPDP_1:READER_1_1> BLKR_16051 [2025-04-09 13:02:42.736] Source database connection [Conn_012X340B00000000000P] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+READER_1_1_1> FR_3071 [2025-04-09 13:02:42.737] Maximum Line sequential buffer length is 1096.
+READER_1_1_1> BLKR_16003 [2025-04-09 13:02:42.737] Initialization completed successfully.
+TRANSF_1_1_1> PETL_24091 [2025-04-09 13:02:42.741] Thread [TRANSF_1_1_1] has the ID [13].
+WRITER_1_*_1> PETL_24091 [2025-04-09 13:02:42.743] Thread [WRITER_1_*_1] has the ID [14].
+WRITER_1_*_1> WRT_8147 [2025-04-09 13:02:42.743] Writer: Target is Database [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa], Bulk Mode [OFF]
+LKPDP_1:READER_1_1> CMN_1021 [2025-04-09 13:02:42.748] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_1:READER_1_1> BLKR_16003 [2025-04-09 13:02:42.748] Initialization completed successfully.
+LKPDP_1:TRANSF_1_1> PETL_24091 [2025-04-09 13:02:42.749] Thread [LKPDP_1:TRANSF_1_1] has the ID [15].
+LKPDP_1:READER_1_1> BLKR_16007 [2025-04-09 13:02:42.749] Reader run started.
+LKPDP_1:READER_1_1> RR_4049 [2025-04-09 13:02:42.749] SQL Query issued to database : (Wed Apr 09 13:02:42 2025)
+LKPDP_1:READER_1_1> RR_4050 [2025-04-09 13:02:42.750] First row returned from database to reader : (Wed Apr 09 13:02:42 2025)
+LKPDP_1:READER_1_1> BLKR_16008 [2025-04-09 13:02:42.750] Reader run completed.
+LKPDP_1:TRANSF_1_1> DBG_21079 [2025-04-09 13:02:42.750] Creating Lookup Cache : (Wed Apr 09 13:02:42 2025)
+LKPDP_1:TRANSF_1_1> DBG_21682 [2025-04-09 13:02:42.750] Lookup table row count : 100
+LKPDP_1:TRANSF_1_1> DBG_21297 [2025-04-09 13:02:42.750] Lookup cache row count : 100
+
+LKPDP_1:TRANSF_1_1> DBG_21294 [2025-04-09 13:02:42.750] Lookup cache creation completed : (Wed Apr 09 13:02:42 2025)
+LKPDP_1:TRANSF_1_1> CMN_1671 [2025-04-09 13:02:42.751] Created new cache files PMLKUP457412551_6_0W64.[dat/idx] in directory D:\apps\Data_Integration_Server\data\cache for Lookup [student].
+LKPDP_1:TRANSF_1_1> DBG_21641 [2025-04-09 13:02:42.751] student: Index cache size = [29828400], Data cache size = [59654144]
+LKPDP_1:TRANSF_1_1> DBG_21216 [2025-04-09 13:02:42.751] Finished transformations for Source Qualifier [student{{DSQ}}]. Total errors [0] 
+DIRECTOR> TT_11184 [2025-04-09 13:02:42.752] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [college].
+LKPDP_2> TM_6660 [2025-04-09 13:02:42.752] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+WRITER_1_*_1> CMN_1021 [2025-04-09 13:02:42.753] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+WRITER_1_*_1> WRT_8221 [2025-04-09 13:02:42.754] Target database connection [Conn_012X340B00000000000P] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+LKPDP_2:READER_1_1> PETL_24091 [2025-04-09 13:02:42.754] Thread [LKPDP_2:READER_1_1] has the ID [16].
+LKPDP_2:READER_1_1> DBG_21438 [2025-04-09 13:02:42.754] Reader: Source is [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa]
+LKPDP_2:READER_1_1> BLKR_16051 [2025-04-09 13:02:42.754] Source database connection [Conn_012X340B00000000000P] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+WRITER_1_*_1> WRT_8397 [2025-04-09 13:02:42.755] Appending output data to file [D:\apps\Data_Integration_Server\data\error\92jYmcRfTa4iJKIrqpjjqY\Target_output1.bad] (initial size [81604]).
+WRITER_1_*_1> WRT_8124 [2025-04-09 13:02:42.755] Target Table CDW_UAS_STG_RESULT :SQL INSERT statement:
+INSERT INTO dbo.CDW_UAS_STG_RESULT(CDW_P_RESULT_DSET_KEY,RESULT_F_PERIOD_KEY,RESULT_F_Student_KEY,RESULT_F_DEPARTMENT_KEY,RESULT_F_COLLEGE_CODE,RESULT_F_COLLEGE_NAME,RESULT_F_COURSE_CODE,RESULT_F_COURSE_NAME,RESULT_F_FACULTY_NO,RESULT_MARKS,RESULT_GRADE,CREATED_DATE,CREATED_BY)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8124 [2025-04-09 13:02:42.755] Target Table CDW_UAS_STG_RESULT :SQL UPDATE statement:
+UPDATE dbo.CDW_UAS_STG_RESULT SET RESULT_F_PERIOD_KEY = ?, RESULT_F_Student_KEY = ?, RESULT_F_DEPARTMENT_KEY = ?, RESULT_F_COLLEGE_CODE = ?, RESULT_F_COLLEGE_NAME = ?, RESULT_F_COURSE_CODE = ?, RESULT_F_COURSE_NAME = ?, RESULT_F_FACULTY_NO = ?, RESULT_MARKS = ?, RESULT_GRADE = ?, CREATED_DATE = ?, CREATED_BY = ? WHERE CDW_P_RESULT_DSET_KEY = ?
+WRITER_1_*_1> WRT_8124 [2025-04-09 13:02:42.755] Target Table CDW_UAS_STG_RESULT :SQL DELETE statement:
+DELETE FROM dbo.CDW_UAS_STG_RESULT WHERE CDW_P_RESULT_DSET_KEY = ?
+WRITER_1_*_1> WRT_8147 [2025-04-09 13:02:42.756] Writer: Target is Database [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa], Bulk Mode [OFF]
+WRITER_1_*_1> WRT_8397 [2025-04-09 13:02:42.757] Appending output data to file [D:\apps\Data_Integration_Server\data\error\92jYmcRfTa4iJKIrqpjjqY\Target1_output1.bad] (initial size [82]).
+WRITER_1_*_1> WRT_8124 [2025-04-09 13:02:42.757] Target Table CDW_UAS_ERR :SQL INSERT statement:
+INSERT INTO dbo.CDW_UAS_ERR(CDW_P_RESULT_DSET_KEY,ERROR_CODE,ERR_MSG,ERR_COLUMN_NM)  VALUES ( ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2025-04-09 13:02:42.757] No column marked as primary key for table [CDW_UAS_ERR]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8270 [2025-04-09 13:02:42.757] Target connection group #1 consists of target(s) [CDW_UAS_STG_RESULT, CDW_UAS_ERR]
+WRITER_1_*_1> WRT_8003 [2025-04-09 13:02:42.757] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2025-04-09 13:02:42.757] Reader run started.
+WRITER_1_*_1> WRT_8005 [2025-04-09 13:02:42.757] Writer run started.
+WRITER_1_*_1> WRT_8158 [2025-04-09 13:02:42.757] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Wed Apr 09 13:02:42 2025
+
+Target tables:
+
+     CDW_UAS_STG_RESULT
+     CDW_UAS_ERR
+
+
+READER_1_1_1> _3120 [2025-04-09 13:02:42.758] Number of column in metadata are more than source file.
+READER_1_1_1> FR_3076 [2025-04-09 13:02:42.758] Skipped over [1] lines.
+READER_1_1_1> DBG_21430 [2025-04-09 13:02:42.758] Reading data from input source file [C:\Users\Administrator\Documents\Source\CDW_UAS_F_RESULT_CL_AH.txt] : (Wed Apr 09 13:02:42 2025)
+READER_1_1_1> BLKR_16019 [2025-04-09 13:02:42.758] Read [200] rows, read [0] error rows for source table [CDW_UAS_F_RESULT_CL_AH_txt] instance name [CDW_UAS_F_RESULT_CL_AH_txt]
+READER_1_1_1> BLKR_16008 [2025-04-09 13:02:42.758] Reader run completed.
+TRANSF_1_1_1> TT_11186 [2025-04-09 13:02:42.758] Lookup cache of [college], previously started by an additional concurrent pipeline, is now needed on demand.
+TRANSF_1_1_1> TT_11184 [2025-04-09 13:02:42.758] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Faculty].
+LKPDP_3> TM_6660 [2025-04-09 13:02:42.759] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+LKPDP_3:READER_1_1> PETL_24091 [2025-04-09 13:02:42.760] Thread [LKPDP_3:READER_1_1] has the ID [17].
+LKPDP_3:READER_1_1> DBG_21438 [2025-04-09 13:02:42.761] Reader: Source is [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa]
+LKPDP_3:READER_1_1> BLKR_16051 [2025-04-09 13:02:42.761] Source database connection [Conn_012X340B00000000000P] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+LKPDP_2:READER_1_1> CMN_1021 [2025-04-09 13:02:42.761] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_2:READER_1_1> BLKR_16003 [2025-04-09 13:02:42.761] Initialization completed successfully.
+LKPDP_2:TRANSF_1_1> PETL_24091 [2025-04-09 13:02:42.762] Thread [LKPDP_2:TRANSF_1_1] has the ID [18].
+LKPDP_2:READER_1_1> BLKR_16007 [2025-04-09 13:02:42.763] Reader run started.
+LKPDP_2:READER_1_1> RR_4049 [2025-04-09 13:02:42.763] SQL Query issued to database : (Wed Apr 09 13:02:42 2025)
+LKPDP_2:READER_1_1> RR_4050 [2025-04-09 13:02:42.764] First row returned from database to reader : (Wed Apr 09 13:02:42 2025)
+LKPDP_2:READER_1_1> BLKR_16008 [2025-04-09 13:02:42.764] Reader run completed.
+LKPDP_2:TRANSF_1_1> DBG_21079 [2025-04-09 13:02:42.764] Creating Lookup Cache : (Wed Apr 09 13:02:42 2025)
+LKPDP_2:TRANSF_1_1> DBG_21682 [2025-04-09 13:02:42.764] Lookup table row count : 15
+LKPDP_2:TRANSF_1_1> DBG_21297 [2025-04-09 13:02:42.765] Lookup cache row count : 15
+
+LKPDP_2:TRANSF_1_1> DBG_21294 [2025-04-09 13:02:42.765] Lookup cache creation completed : (Wed Apr 09 13:02:42 2025)
+LKPDP_2:TRANSF_1_1> CMN_1671 [2025-04-09 13:02:42.765] Created new cache files PMLKUP457412551_7_0W64.[dat/idx] in directory D:\apps\Data_Integration_Server\data\cache for Lookup [college].
+LKPDP_2:TRANSF_1_1> DBG_21641 [2025-04-09 13:02:42.765] college: Index cache size = [29872128], Data cache size = [59654144]
+LKPDP_2:TRANSF_1_1> DBG_21216 [2025-04-09 13:02:42.765] Finished transformations for Source Qualifier [college{{DSQ}}]. Total errors [0] 
+TRANSF_1_1_1> TT_11186 [2025-04-09 13:02:42.767] Lookup cache of [Faculty], previously started by an additional concurrent pipeline, is now needed on demand.
+TRANSF_1_1_1> TT_11184 [2025-04-09 13:02:42.767] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Department].
+LKPDP_4> TM_6660 [2025-04-09 13:02:42.768] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+LKPDP_4:READER_1_1> PETL_24091 [2025-04-09 13:02:42.769] Thread [LKPDP_4:READER_1_1] has the ID [19].
+LKPDP_4:READER_1_1> DBG_21438 [2025-04-09 13:02:42.770] Reader: Source is [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa]
+LKPDP_4:READER_1_1> BLKR_16051 [2025-04-09 13:02:42.770] Source database connection [Conn_012X340B00000000000P] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+LKPDP_3:READER_1_1> CMN_1021 [2025-04-09 13:02:42.770] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_3:READER_1_1> BLKR_16003 [2025-04-09 13:02:42.770] Initialization completed successfully.
+LKPDP_3:TRANSF_1_1> PETL_24091 [2025-04-09 13:02:42.771] Thread [LKPDP_3:TRANSF_1_1] has the ID [20].
+LKPDP_3:READER_1_1> BLKR_16007 [2025-04-09 13:02:42.771] Reader run started.
+LKPDP_3:READER_1_1> RR_4049 [2025-04-09 13:02:42.771] SQL Query issued to database : (Wed Apr 09 13:02:42 2025)
+LKPDP_3:READER_1_1> RR_4050 [2025-04-09 13:02:42.772] First row returned from database to reader : (Wed Apr 09 13:02:42 2025)
+LKPDP_3:READER_1_1> BLKR_16008 [2025-04-09 13:02:42.772] Reader run completed.
+LKPDP_3:TRANSF_1_1> DBG_21079 [2025-04-09 13:02:42.772] Creating Lookup Cache : (Wed Apr 09 13:02:42 2025)
+LKPDP_3:TRANSF_1_1> DBG_21682 [2025-04-09 13:02:42.772] Lookup table row count : 20
+LKPDP_3:TRANSF_1_1> DBG_21297 [2025-04-09 13:02:42.772] Lookup cache row count : 20
+
+LKPDP_3:TRANSF_1_1> DBG_21294 [2025-04-09 13:02:42.772] Lookup cache creation completed : (Wed Apr 09 13:02:42 2025)
+LKPDP_3:TRANSF_1_1> CMN_1671 [2025-04-09 13:02:42.772] Created new cache files PMLKUP457412551_8_0W64.[dat/idx] in directory D:\apps\Data_Integration_Server\data\cache for Lookup [Faculty].
+LKPDP_3:TRANSF_1_1> DBG_21641 [2025-04-09 13:02:42.772] Faculty: Index cache size = [29872128], Data cache size = [59654144]
+LKPDP_3:TRANSF_1_1> DBG_21216 [2025-04-09 13:02:42.772] Finished transformations for Source Qualifier [Faculty{{DSQ}}]. Total errors [0] 
+TRANSF_1_1_1> TT_11186 [2025-04-09 13:02:42.774] Lookup cache of [Department], previously started by an additional concurrent pipeline, is now needed on demand.
+TRANSF_1_1_1> TT_11184 [2025-04-09 13:02:42.774] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [course].
+LKPDP_5> TM_6660 [2025-04-09 13:02:42.774] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+LKPDP_5:READER_1_1> PETL_24091 [2025-04-09 13:02:42.775] Thread [LKPDP_5:READER_1_1] has the ID [21].
+LKPDP_5:READER_1_1> DBG_21438 [2025-04-09 13:02:42.775] Reader: Source is [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa]
+LKPDP_5:READER_1_1> BLKR_16051 [2025-04-09 13:02:42.775] Source database connection [Conn_012X340B00000000000P] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+LKPDP_4:READER_1_1> CMN_1021 [2025-04-09 13:02:42.777] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_4:READER_1_1> BLKR_16003 [2025-04-09 13:02:42.777] Initialization completed successfully.
+LKPDP_4:TRANSF_1_1> PETL_24091 [2025-04-09 13:02:42.778] Thread [LKPDP_4:TRANSF_1_1] has the ID [22].
+LKPDP_4:READER_1_1> BLKR_16007 [2025-04-09 13:02:42.778] Reader run started.
+LKPDP_4:READER_1_1> RR_4049 [2025-04-09 13:02:42.778] SQL Query issued to database : (Wed Apr 09 13:02:42 2025)
+LKPDP_4:READER_1_1> RR_4050 [2025-04-09 13:02:42.779] First row returned from database to reader : (Wed Apr 09 13:02:42 2025)
+LKPDP_4:READER_1_1> BLKR_16008 [2025-04-09 13:02:42.779] Reader run completed.
+LKPDP_4:TRANSF_1_1> DBG_21079 [2025-04-09 13:02:42.779] Creating Lookup Cache : (Wed Apr 09 13:02:42 2025)
+LKPDP_4:TRANSF_1_1> DBG_21682 [2025-04-09 13:02:42.779] Lookup table row count : 10
+LKPDP_4:TRANSF_1_1> DBG_21297 [2025-04-09 13:02:42.779] Lookup cache row count : 10
+
+LKPDP_4:TRANSF_1_1> DBG_21294 [2025-04-09 13:02:42.779] Lookup cache creation completed : (Wed Apr 09 13:02:42 2025)
+LKPDP_4:TRANSF_1_1> CMN_1671 [2025-04-09 13:02:42.779] Created new cache files PMLKUP457412551_9_0W64.[dat/idx] in directory D:\apps\Data_Integration_Server\data\cache for Lookup [Department].
+LKPDP_4:TRANSF_1_1> DBG_21641 [2025-04-09 13:02:42.779] Department: Index cache size = [29828400], Data cache size = [59654144]
+LKPDP_4:TRANSF_1_1> DBG_21216 [2025-04-09 13:02:42.779] Finished transformations for Source Qualifier [Department{{DSQ}}]. Total errors [0] 
+TRANSF_1_1_1> TT_11186 [2025-04-09 13:02:42.781] Lookup cache of [course], previously started by an additional concurrent pipeline, is now needed on demand.
+TRANSF_1_1_1> TT_11184 [2025-04-09 13:02:42.781] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Time].
+LKPDP_6> TM_6660 [2025-04-09 13:02:42.781] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+LKPDP_5:READER_1_1> CMN_1021 [2025-04-09 13:02:42.782] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_5:READER_1_1> BLKR_16003 [2025-04-09 13:02:42.782] Initialization completed successfully.
+LKPDP_6:READER_1_1> PETL_24091 [2025-04-09 13:02:42.782] Thread [LKPDP_6:READER_1_1] has the ID [23].
+LKPDP_6:READER_1_1> DBG_21438 [2025-04-09 13:02:42.782] Reader: Source is [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa]
+LKPDP_6:READER_1_1> BLKR_16051 [2025-04-09 13:02:42.782] Source database connection [Conn_012X340B00000000000P] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+LKPDP_5:TRANSF_1_1> PETL_24091 [2025-04-09 13:02:42.783] Thread [LKPDP_5:TRANSF_1_1] has the ID [24].
+LKPDP_5:READER_1_1> BLKR_16007 [2025-04-09 13:02:42.783] Reader run started.
+LKPDP_5:READER_1_1> RR_4049 [2025-04-09 13:02:42.783] SQL Query issued to database : (Wed Apr 09 13:02:42 2025)
+LKPDP_5:READER_1_1> RR_4050 [2025-04-09 13:02:42.784] First row returned from database to reader : (Wed Apr 09 13:02:42 2025)
+LKPDP_5:READER_1_1> BLKR_16008 [2025-04-09 13:02:42.784] Reader run completed.
+LKPDP_5:TRANSF_1_1> DBG_21079 [2025-04-09 13:02:42.784] Creating Lookup Cache : (Wed Apr 09 13:02:42 2025)
+LKPDP_5:TRANSF_1_1> DBG_21682 [2025-04-09 13:02:42.784] Lookup table row count : 10
+LKPDP_5:TRANSF_1_1> DBG_21297 [2025-04-09 13:02:42.784] Lookup cache row count : 10
+
+LKPDP_5:TRANSF_1_1> DBG_21294 [2025-04-09 13:02:42.784] Lookup cache creation completed : (Wed Apr 09 13:02:42 2025)
+LKPDP_5:TRANSF_1_1> CMN_1671 [2025-04-09 13:02:42.784] Created new cache files PMLKUP457412551_10_0W64.[dat/idx] in directory D:\apps\Data_Integration_Server\data\cache for Lookup [course].
+LKPDP_5:TRANSF_1_1> DBG_21641 [2025-04-09 13:02:42.784] course: Index cache size = [29872128], Data cache size = [59654144]
+LKPDP_5:TRANSF_1_1> DBG_21216 [2025-04-09 13:02:42.784] Finished transformations for Source Qualifier [course{{DSQ}}]. Total errors [0] 
+TRANSF_1_1_1> TT_11186 [2025-04-09 13:02:42.786] Lookup cache of [Time], previously started by an additional concurrent pipeline, is now needed on demand.
+TRANSF_1_1_1> TT_11185 [2025-04-09 13:02:42.786] No more lookup cache to build by additional concurrent pipeline in the current concurrent source set.
+LKPDP_6:READER_1_1> CMN_1021 [2025-04-09 13:02:42.788] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_6:READER_1_1> BLKR_16003 [2025-04-09 13:02:42.788] Initialization completed successfully.
+LKPDP_6:TRANSF_1_1> PETL_24091 [2025-04-09 13:02:42.789] Thread [LKPDP_6:TRANSF_1_1] has the ID [25].
+LKPDP_6:READER_1_1> BLKR_16007 [2025-04-09 13:02:42.789] Reader run started.
+LKPDP_6:READER_1_1> RR_4049 [2025-04-09 13:02:42.789] SQL Query issued to database : (Wed Apr 09 13:02:42 2025)
+LKPDP_6:READER_1_1> RR_4050 [2025-04-09 13:02:42.790] First row returned from database to reader : (Wed Apr 09 13:02:42 2025)
+LKPDP_6:READER_1_1> BLKR_16008 [2025-04-09 13:02:42.790] Reader run completed.
+LKPDP_6:TRANSF_1_1> DBG_21079 [2025-04-09 13:02:42.790] Creating Lookup Cache : (Wed Apr 09 13:02:42 2025)
+LKPDP_6:TRANSF_1_1> DBG_21682 [2025-04-09 13:02:42.791] Lookup table row count : 365
+LKPDP_6:TRANSF_1_1> DBG_21297 [2025-04-09 13:02:42.791] Lookup cache row count : 365
+
+LKPDP_6:TRANSF_1_1> DBG_21294 [2025-04-09 13:02:42.791] Lookup cache creation completed : (Wed Apr 09 13:02:42 2025)
+LKPDP_6:TRANSF_1_1> CMN_1671 [2025-04-09 13:02:42.791] Created new cache files PMLKUP457412551_11_0W64.[dat/idx] in directory D:\apps\Data_Integration_Server\data\cache for Lookup [Time].
+LKPDP_6:TRANSF_1_1> DBG_21641 [2025-04-09 13:02:42.791] Time: Index cache size = [29832000], Data cache size = [59654144]
+LKPDP_6:TRANSF_1_1> DBG_21216 [2025-04-09 13:02:42.791] Finished transformations for Source Qualifier [Time{{DSQ}}]. Total errors [0] 
+TRANSF_1_1_1> DBG_21216 [2025-04-09 13:02:42.794] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2025-04-09 13:02:42.794] Start loading table [CDW_UAS_STG_RESULT] at: Wed Apr 09 13:02:42 2025
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.795] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.795] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.795] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.795] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.795] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.795] 
+Row # [1] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.796] : Rowdata: ( RowType=0(insert) Src Rowid=1 Targ Rowid=1
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "1"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01012025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "90"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.796] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.796] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.796] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.796] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.796] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.796] 
+Row # [2] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.796] : Rowdata: ( RowType=0(insert) Src Rowid=2 Targ Rowid=2
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "2"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01022025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "110"
+  RESULT_MARKS (RESULT_MARKS:Int:): "40"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.797] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.797] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.797] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.797] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.797] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.797] 
+Row # [3] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.797] : Rowdata: ( RowType=0(insert) Src Rowid=3 Targ Rowid=3
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "3"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01032025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "3"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "103"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Gamma Arts College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "80"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.797] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.797] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.797] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.798] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.798] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.798] 
+Row # [4] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.798] : Rowdata: ( RowType=0(insert) Src Rowid=4 Targ Rowid=4
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "4"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01042025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "103"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Gamma Arts College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "70"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.798] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.798] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.799] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.799] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.799] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.799] 
+Row # [5] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.799] : Rowdata: ( RowType=0(insert) Src Rowid=5 Targ Rowid=5
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "5"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01052025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "8"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "107"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Eta Polytechnic"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "73"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.799] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.799] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.799] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.799] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.799] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.799] 
+Row # [6] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.799] : Rowdata: ( RowType=0(insert) Src Rowid=6 Targ Rowid=6
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "6"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01062025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "1"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "105"
+  RESULT_MARKS (RESULT_MARKS:Int:): "86"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.800] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.800] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.800] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.800] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.800] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.800] 
+Row # [7] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.800] : Rowdata: ( RowType=0(insert) Src Rowid=7 Targ Rowid=7
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "7"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01072025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "1"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "103"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Gamma Arts College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "88"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.801] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.801] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.801] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.801] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.801] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.801] 
+Row # [8] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.801] : Rowdata: ( RowType=0(insert) Src Rowid=8 Targ Rowid=8
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "8"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01082025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "3"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "105"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Epsilon Medical Institute"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "110"
+  RESULT_MARKS (RESULT_MARKS:Int:): "40"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.801] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.801] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.801] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.801] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.801] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.801] 
+Row # [9] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.801] : Rowdata: ( RowType=0(insert) Src Rowid=9 Targ Rowid=9
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "9"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01092025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "1007"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "Physics"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "58"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "PASS"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.802] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.802] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.802] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.802] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.802] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.802] 
+Row # [10] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.802] : Rowdata: ( RowType=0(insert) Src Rowid=10 Targ Rowid=10
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "10"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01102025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "6"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "108"
+  RESULT_MARKS (RESULT_MARKS:Int:): "63"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.803] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.803] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.803] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.803] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.803] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.803] 
+Row # [11] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.803] : Rowdata: ( RowType=0(insert) Src Rowid=11 Targ Rowid=11
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "11"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01112025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "7"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "101"
+  RESULT_MARKS (RESULT_MARKS:Int:): "95"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.804] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.804] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.804] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.804] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.804] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.804] 
+Row # [12] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.804] : Rowdata: ( RowType=0(insert) Src Rowid=12 Targ Rowid=12
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "12"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "01122025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "109"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Iota Technical College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "58"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.804] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.804] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.804] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.804] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.804] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.804] 
+Row # [13] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.804] : Rowdata: ( RowType=0(insert) Src Rowid=32 Targ Rowid=32
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "32"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02012025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "105"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Epsilon Medical Institute"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "1007"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "Physics"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "109"
+  RESULT_MARKS (RESULT_MARKS:Int:): "59"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "PASS"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.805] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.805] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.805] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.805] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.805] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.805] 
+Row # [14] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.805] : Rowdata: ( RowType=0(insert) Src Rowid=33 Targ Rowid=33
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "33"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02022025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "10"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "109"
+  RESULT_MARKS (RESULT_MARKS:Int:): "79"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.805] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.806] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.806] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.806] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.806] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.806] 
+Row # [15] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.806] : Rowdata: ( RowType=0(insert) Src Rowid=34 Targ Rowid=34
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "34"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02032025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "107"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Eta Polytechnic"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "101"
+  RESULT_MARKS (RESULT_MARKS:Int:): "82"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.806] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.806] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.806] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.806] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.806] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.806] 
+Row # [16] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.806] : Rowdata: ( RowType=0(insert) Src Rowid=35 Targ Rowid=35
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "35"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02042025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "10"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "108"
+  RESULT_MARKS (RESULT_MARKS:Int:): "57"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.807] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.807] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.807] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.807] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.807] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.807] 
+Row # [17] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.807] : Rowdata: ( RowType=0(insert) Src Rowid=36 Targ Rowid=36
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "36"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02052025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "105"
+  RESULT_MARKS (RESULT_MARKS:Int:): "100"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.808] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.808] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.808] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.808] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.808] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.808] 
+Row # [18] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.808] : Rowdata: ( RowType=0(insert) Src Rowid=37 Targ Rowid=37
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "37"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02062025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "(NULL)"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "(NULL)"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "105"
+  RESULT_MARKS (RESULT_MARKS:Int:): "80"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.808] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.808] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.808] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.808] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.808] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.808] 
+Row # [19] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.808] : Rowdata: ( RowType=0(insert) Src Rowid=38 Targ Rowid=38
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "38"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02072025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "6"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "103"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Gamma Arts College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "53"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.809] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.809] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.809] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.809] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.809] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.809] 
+Row # [20] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.809] : Rowdata: ( RowType=0(insert) Src Rowid=39 Targ Rowid=39
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "39"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02082025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "6"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "104"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Delta Science University"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "101"
+  RESULT_MARKS (RESULT_MARKS:Int:): "45"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.810] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.810] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.810] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.810] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.810] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.810] 
+Row # [21] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.810] : Rowdata: ( RowType=0(insert) Src Rowid=40 Targ Rowid=40
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "40"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02092025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "3"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "107"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Eta Polytechnic"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "102"
+  RESULT_MARKS (RESULT_MARKS:Int:): "97"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.810] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.810] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.810] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.810] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.810] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.810] 
+Row # [22] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.811] : Rowdata: ( RowType=0(insert) Src Rowid=41 Targ Rowid=41
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "41"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02102025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "1"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "110"
+  RESULT_MARKS (RESULT_MARKS:Int:): "42"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.811] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.811] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.811] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.811] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.811] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.811] 
+Row # [23] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.812] : Rowdata: ( RowType=0(insert) Src Rowid=42 Targ Rowid=42
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "42"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02112025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "104"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Delta Science University"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "106"
+  RESULT_MARKS (RESULT_MARKS:Int:): "92"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.812] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.812] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.812] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.812] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.812] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.812] 
+Row # [24] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.813] : Rowdata: ( RowType=0(insert) Src Rowid=43 Targ Rowid=43
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "43"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "02122025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "109"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Iota Technical College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "46"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.813] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.813] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.813] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.813] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.813] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.813] 
+Row # [25] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.813] : Rowdata: ( RowType=0(insert) Src Rowid=60 Targ Rowid=60
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "60"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03012025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "1"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "104"
+  RESULT_MARKS (RESULT_MARKS:Int:): "76"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.814] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.814] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.814] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.814] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.814] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.814] 
+Row # [26] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.814] : Rowdata: ( RowType=0(insert) Src Rowid=61 Targ Rowid=61
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "61"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03022025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "3"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "96"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.814] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.814] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.814] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.814] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.814] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.814] 
+Row # [27] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.814] : Rowdata: ( RowType=0(insert) Src Rowid=62 Targ Rowid=62
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "62"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03032025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "107"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Eta Polytechnic"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "109"
+  RESULT_MARKS (RESULT_MARKS:Int:): "67"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.815] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.815] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.815] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.815] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.815] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.815] 
+Row # [28] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.815] : Rowdata: ( RowType=0(insert) Src Rowid=63 Targ Rowid=63
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "63"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03042025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "3"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "103"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Gamma Arts College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "104"
+  RESULT_MARKS (RESULT_MARKS:Int:): "62"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.815] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.815] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.815] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.815] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.815] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.815] 
+Row # [29] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.816] : Rowdata: ( RowType=0(insert) Src Rowid=64 Targ Rowid=64
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "64"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03052025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "1"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "104"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Delta Science University"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "102"
+  RESULT_MARKS (RESULT_MARKS:Int:): "76"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.816] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.816] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.816] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.816] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.816] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.816] 
+Row # [30] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.816] : Rowdata: ( RowType=0(insert) Src Rowid=65 Targ Rowid=65
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "65"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03062025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "105"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Epsilon Medical Institute"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "1007"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "Physics"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "56"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "PASS"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.817] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.817] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.817] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.817] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.817] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.817] 
+Row # [31] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.817] : Rowdata: ( RowType=0(insert) Src Rowid=66 Targ Rowid=66
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "66"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03072025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "10"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "41"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.818] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.818] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.818] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.818] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.818] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.818] 
+Row # [32] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.818] : Rowdata: ( RowType=0(insert) Src Rowid=67 Targ Rowid=67
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "67"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03082025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "6"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "106"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Zeta Management School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "58"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.818] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.818] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.819] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.819] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.819] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.819] 
+Row # [33] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.819] : Rowdata: ( RowType=0(insert) Src Rowid=68 Targ Rowid=68
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "68"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03092025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "106"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Zeta Management School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "102"
+  RESULT_MARKS (RESULT_MARKS:Int:): "63"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.819] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.819] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.819] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.819] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.819] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.819] 
+Row # [34] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.819] : Rowdata: ( RowType=0(insert) Src Rowid=69 Targ Rowid=69
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "69"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03102025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "110"
+  RESULT_MARKS (RESULT_MARKS:Int:): "52"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.820] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.820] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.820] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.820] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.820] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.820] 
+Row # [35] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.820] : Rowdata: ( RowType=0(insert) Src Rowid=70 Targ Rowid=70
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "70"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03112025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "63"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.820] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.820] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.820] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.820] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.820] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.820] 
+Row # [36] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.820] : Rowdata: ( RowType=0(insert) Src Rowid=71 Targ Rowid=71
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "71"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "03122025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "8"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "104"
+  RESULT_MARKS (RESULT_MARKS:Int:): "45"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.821] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.821] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.821] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.821] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.821] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.821] 
+Row # [37] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.821] : Rowdata: ( RowType=0(insert) Src Rowid=91 Targ Rowid=91
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "91"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04012025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "6"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "107"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Eta Polytechnic"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "108"
+  RESULT_MARKS (RESULT_MARKS:Int:): "90"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.821] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.821] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.821] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.821] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.821] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.821] 
+Row # [38] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.821] : Rowdata: ( RowType=0(insert) Src Rowid=92 Targ Rowid=92
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "92"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04022025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "106"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Zeta Management School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "108"
+  RESULT_MARKS (RESULT_MARKS:Int:): "40"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.822] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.822] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.822] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.822] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.822] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.822] 
+Row # [39] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.822] : Rowdata: ( RowType=0(insert) Src Rowid=93 Targ Rowid=93
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "93"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04032025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "103"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Gamma Arts College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "110"
+  RESULT_MARKS (RESULT_MARKS:Int:): "43"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.822] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.822] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.823] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.823] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.823] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.823] 
+Row # [40] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.823] : Rowdata: ( RowType=0(insert) Src Rowid=94 Targ Rowid=94
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "94"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04042025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "(NULL)"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "(NULL)"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "105"
+  RESULT_MARKS (RESULT_MARKS:Int:): "56"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.823] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.823] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.823] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.823] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.823] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.823] 
+Row # [41] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.823] : Rowdata: ( RowType=0(insert) Src Rowid=95 Targ Rowid=95
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "95"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04052025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "7"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "61"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.824] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.824] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.824] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.824] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.824] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.824] 
+Row # [42] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.824] : Rowdata: ( RowType=0(insert) Src Rowid=96 Targ Rowid=96
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "96"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04062025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "(NULL)"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "(NULL)"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "104"
+  RESULT_MARKS (RESULT_MARKS:Int:): "45"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.824] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.824] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.824] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.824] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.824] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.824] 
+Row # [43] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.824] : Rowdata: ( RowType=0(insert) Src Rowid=97 Targ Rowid=97
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "97"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04072025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "7"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "61"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.825] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.825] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.825] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.825] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.825] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.825] 
+Row # [44] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.825] : Rowdata: ( RowType=0(insert) Src Rowid=98 Targ Rowid=98
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "98"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04082025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "2"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "89"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.825] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.825] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.825] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.825] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.825] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.825] 
+Row # [45] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.825] : Rowdata: ( RowType=0(insert) Src Rowid=99 Targ Rowid=99
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "99"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04092025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "101"
+  RESULT_MARKS (RESULT_MARKS:Int:): "45"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.826] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.826] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.826] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.826] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.826] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.826] 
+Row # [46] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.826] : Rowdata: ( RowType=0(insert) Src Rowid=100 Targ Rowid=100
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "100"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04102025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "104"
+  RESULT_MARKS (RESULT_MARKS:Int:): "79"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.826] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.826] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.826] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.826] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.826] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.826] 
+Row # [47] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.826] : Rowdata: ( RowType=0(insert) Src Rowid=101 Targ Rowid=101
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "101"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04112025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "7"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "105"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Epsilon Medical Institute"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "76"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.827] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.827] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.827] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.827] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.827] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.827] 
+Row # [48] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.827] : Rowdata: ( RowType=0(insert) Src Rowid=102 Targ Rowid=102
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "102"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "04122025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "3"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "90"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.827] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.827] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.827] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.827] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.827] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.827] 
+Row # [49] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.827] : Rowdata: ( RowType=0(insert) Src Rowid=121 Targ Rowid=121
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "121"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05012025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "6"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "106"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Zeta Management School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "105"
+  RESULT_MARKS (RESULT_MARKS:Int:): "66"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.828] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.828] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.828] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.828] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.828] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.828] 
+Row # [50] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.828] : Rowdata: ( RowType=0(insert) Src Rowid=122 Targ Rowid=122
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "122"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05022025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "6"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "1007"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "Physics"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "110"
+  RESULT_MARKS (RESULT_MARKS:Int:): "99"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "PASS"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.828] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.828] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.828] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.828] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.828] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.828] 
+Row # [51] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.828] : Rowdata: ( RowType=0(insert) Src Rowid=123 Targ Rowid=123
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "123"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05032025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "109"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Iota Technical College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "108"
+  RESULT_MARKS (RESULT_MARKS:Int:): "86"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.829] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.829] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.829] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.829] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.829] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.829] 
+Row # [52] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.829] : Rowdata: ( RowType=0(insert) Src Rowid=124 Targ Rowid=124
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "124"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05042025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "99"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.830] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.830] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.830] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.830] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.830] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.830] 
+Row # [53] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.830] : Rowdata: ( RowType=0(insert) Src Rowid=125 Targ Rowid=125
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "125"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05052025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "3"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "107"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Eta Polytechnic"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "109"
+  RESULT_MARKS (RESULT_MARKS:Int:): "71"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.830] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.830] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.830] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.830] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.830] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.830] 
+Row # [54] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.831] : Rowdata: ( RowType=0(insert) Src Rowid=126 Targ Rowid=126
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "126"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05062025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "109"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Iota Technical College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "102"
+  RESULT_MARKS (RESULT_MARKS:Int:): "96"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.831] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.831] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.831] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.831] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.831] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.831] 
+Row # [55] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.831] : Rowdata: ( RowType=0(insert) Src Rowid=127 Targ Rowid=127
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "127"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05072025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "7"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "101"
+  RESULT_MARKS (RESULT_MARKS:Int:): "68"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.832] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.832] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.832] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.832] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.832] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.832] 
+Row # [56] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.832] : Rowdata: ( RowType=0(insert) Src Rowid=128 Targ Rowid=128
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "128"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05082025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "101"
+  RESULT_MARKS (RESULT_MARKS:Int:): "97"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.832] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.832] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.833] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.833] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.833] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.833] 
+Row # [57] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.833] : Rowdata: ( RowType=0(insert) Src Rowid=129 Targ Rowid=129
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "129"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05092025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "1"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "106"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Zeta Management School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "110"
+  RESULT_MARKS (RESULT_MARKS:Int:): "68"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.833] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.833] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.833] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.833] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.833] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.833] 
+Row # [58] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.833] : Rowdata: ( RowType=0(insert) Src Rowid=130 Targ Rowid=130
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "130"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05102025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "3"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "106"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Zeta Management School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "110"
+  RESULT_MARKS (RESULT_MARKS:Int:): "93"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.834] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.834] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.834] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.834] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.834] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.834] 
+Row # [59] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.834] : Rowdata: ( RowType=0(insert) Src Rowid=131 Targ Rowid=131
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "131"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05112025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "8"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "106"
+  RESULT_MARKS (RESULT_MARKS:Int:): "45"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.834] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.834] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.834] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.834] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.834] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.834] 
+Row # [60] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.835] : Rowdata: ( RowType=0(insert) Src Rowid=132 Targ Rowid=132
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "132"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "05122025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "49"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.835] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.835] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.835] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.835] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.835] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.835] 
+Row # [61] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.835] : Rowdata: ( RowType=0(insert) Src Rowid=152 Targ Rowid=152
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "152"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06012025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "1"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "109"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Iota Technical College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "1007"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "Physics"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "105"
+  RESULT_MARKS (RESULT_MARKS:Int:): "89"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "PASS"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.836] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.836] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.836] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.836] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.836] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.836] 
+Row # [62] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.836] : Rowdata: ( RowType=0(insert) Src Rowid=153 Targ Rowid=153
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "153"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06022025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "107"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Eta Polytechnic"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "1007"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "Physics"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "105"
+  RESULT_MARKS (RESULT_MARKS:Int:): "94"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "PASS"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.836] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.836] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.836] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.836] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.836] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.836] 
+Row # [63] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.836] : Rowdata: ( RowType=0(insert) Src Rowid=154 Targ Rowid=154
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "154"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06032025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "8"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "103"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Gamma Arts College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "102"
+  RESULT_MARKS (RESULT_MARKS:Int:): "55"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.837] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.837] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.837] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.837] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.837] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.837] 
+Row # [64] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.837] : Rowdata: ( RowType=0(insert) Src Rowid=155 Targ Rowid=155
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "155"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06042025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "(NULL)"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "(NULL)"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "102"
+  RESULT_MARKS (RESULT_MARKS:Int:): "79"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.837] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.837] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.837] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.837] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.837] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.837] 
+Row # [65] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.838] : Rowdata: ( RowType=0(insert) Src Rowid=156 Targ Rowid=156
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "156"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06052025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "3"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "102"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Beta Engineering College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "102"
+  RESULT_MARKS (RESULT_MARKS:Int:): "95"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.838] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.838] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.838] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.838] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.838] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.838] 
+Row # [66] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.838] : Rowdata: ( RowType=0(insert) Src Rowid=157 Targ Rowid=157
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "157"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06062025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "103"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Gamma Arts College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "73"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.839] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.839] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.839] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.839] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.839] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.839] 
+Row # [67] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.839] : Rowdata: ( RowType=0(insert) Src Rowid=158 Targ Rowid=158
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "158"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06072025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "5"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "(NULL)"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "(NULL)"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "101"
+  RESULT_MARKS (RESULT_MARKS:Int:): "44"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.839] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.839] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.839] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.840] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.840] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.840] 
+Row # [68] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.840] : Rowdata: ( RowType=0(insert) Src Rowid=159 Targ Rowid=159
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "159"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06082025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "1"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "106"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Zeta Management School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "108"
+  RESULT_MARKS (RESULT_MARKS:Int:): "51"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.840] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.840] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.840] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.840] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.840] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.840] 
+Row # [69] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.840] : Rowdata: ( RowType=0(insert) Src Rowid=160 Targ Rowid=160
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "160"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06092025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "(NULL)"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "(NULL)"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "102"
+  RESULT_MARKS (RESULT_MARKS:Int:): "78"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.841] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.841] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.841] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.841] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.841] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.841] 
+Row # [70] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.841] : Rowdata: ( RowType=0(insert) Src Rowid=161 Targ Rowid=161
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "161"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06102025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "8"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "105"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Epsilon Medical Institute"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "104"
+  RESULT_MARKS (RESULT_MARKS:Int:): "74"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.841] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.841] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.841] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.841] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.841] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.841] 
+Row # [71] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.841] : Rowdata: ( RowType=0(insert) Src Rowid=162 Targ Rowid=162
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "162"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06112025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "9"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "109"
+  RESULT_MARKS (RESULT_MARKS:Int:): "99"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.842] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.842] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.842] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.842] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.842] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.842] 
+Row # [72] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.842] : Rowdata: ( RowType=0(insert) Src Rowid=163 Targ Rowid=163
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "163"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "06122025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "6"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "107"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Eta Polytechnic"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "106"
+  RESULT_MARKS (RESULT_MARKS:Int:): "71"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.842] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.842] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.842] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.842] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.842] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.842] 
+Row # [73] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.842] : Rowdata: ( RowType=0(insert) Src Rowid=182 Targ Rowid=182
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "182"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07012025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "8"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "101"
+  RESULT_MARKS (RESULT_MARKS:Int:): "46"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.843] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.843] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.843] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.843] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.843] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.843] 
+Row # [74] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.843] : Rowdata: ( RowType=0(insert) Src Rowid=183 Targ Rowid=183
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "183"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07022025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "7"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "106"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Zeta Management School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "1007"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "Physics"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "110"
+  RESULT_MARKS (RESULT_MARKS:Int:): "54"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "PASS"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.843] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.844] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.844] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.844] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.844] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.844] 
+Row # [75] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.844] : Rowdata: ( RowType=0(insert) Src Rowid=184 Targ Rowid=184
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "184"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07032025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "10"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "109"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Iota Technical College"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "104"
+  RESULT_MARKS (RESULT_MARKS:Int:): "54"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.844] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.844] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.844] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.844] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.844] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.844] 
+Row # [76] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.844] : Rowdata: ( RowType=0(insert) Src Rowid=185 Targ Rowid=185
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "185"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07042025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "10"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "104"
+  RESULT_MARKS (RESULT_MARKS:Int:): "66"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.845] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.845] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.845] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.845] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.845] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.845] 
+Row # [77] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.845] : Rowdata: ( RowType=0(insert) Src Rowid=186 Targ Rowid=186
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "186"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07052025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "6"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "1007"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "Physics"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "108"
+  RESULT_MARKS (RESULT_MARKS:Int:): "50"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "PASS"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.845] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.845] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.845] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.845] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.845] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.845] 
+Row # [78] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.846] : Rowdata: ( RowType=0(insert) Src Rowid=187 Targ Rowid=187
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "187"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07062025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "4"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "105"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Epsilon Medical Institute"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "103"
+  RESULT_MARKS (RESULT_MARKS:Int:): "58"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.846] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.846] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.846] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.846] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.846] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.846] 
+Row # [79] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.846] : Rowdata: ( RowType=0(insert) Src Rowid=188 Targ Rowid=188
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "188"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07072025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "2"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "105"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Epsilon Medical Institute"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "40"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.847] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.847] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.847] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.847] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.847] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.847] 
+Row # [80] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.847] : Rowdata: ( RowType=0(insert) Src Rowid=189 Targ Rowid=189
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "189"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07082025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "10"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "110"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Kappa Law School"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "96"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.847] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.847] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.847] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.847] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.847] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.847] 
+Row # [81] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.847] : Rowdata: ( RowType=0(insert) Src Rowid=190 Targ Rowid=190
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "190"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07092025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "8"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "(NULL)"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "(NULL)"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "108"
+  RESULT_MARKS (RESULT_MARKS:Int:): "74"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.848] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.848] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.848] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.848] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.848] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.848] 
+Row # [82] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.848] : Rowdata: ( RowType=0(insert) Src Rowid=191 Targ Rowid=191
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "191"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07102025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "8"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "108"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Theta Design Academy"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "106"
+  RESULT_MARKS (RESULT_MARKS:Int:): "49"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.848] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.848] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.848] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.848] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.849] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.849] 
+Row # [83] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.849] : Rowdata: ( RowType=0(insert) Src Rowid=192 Targ Rowid=192
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "192"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07112025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "1"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "107"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Eta Polytechnic"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "1007"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "Physics"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "107"
+  RESULT_MARKS (RESULT_MARKS:Int:): "44"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.849] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8229 [2025-04-09 13:02:42.849] Database errors occurred: 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]Violation of PRIMARY KEY constraint 'PK__CDW_UAS___A3D2219E4CCCA1AB'. Cannot insert duplicate key in object 'dbo.CDW_UAS_STG_RESULT'. 
+FnName: Execute -- [Informatica][ODBC SQL Server Wire Protocol driver][Microsoft SQL Server]The statement has been terminated.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.849] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8425 [2025-04-09 13:02:42.849] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2025-04-09 13:02:42.849] Timestamp Event: [Wed Apr 09 13:02:42 2025]
+WRITER_1_*_1> WRT_8114 [2025-04-09 13:02:42.849] 
+Row # [84] in bad file
+
+WRITER_1_*_1> CMN_1053 [2025-04-09 13:02:42.849] : Rowdata: ( RowType=0(insert) Src Rowid=193 Targ Rowid=193
+  CDW_P_RESULT_DSET_KEY (CDW_P_RESULT_DSET_KEY:Int:): "193"
+  RESULT_F_PERIOD_KEY (RESULT_F_PERIOD_KEY:UniChar.8:): "07122025"
+  RESULT_F_Student_KEY (RESULT_F_Student_KEY:Int:): "(NULL)"
+  RESULT_F_DEPARTMENT_KEY (RESULT_F_DEPARTMENT_KEY:Int:): "10"
+  RESULT_F_COLLEGE_CODE (RESULT_F_COLLEGE_CODE:Int:): "104"
+  RESULT_F_COLLEGE_NAME (RESULT_F_COLLEGE_NAME:UniChar.25:): "Delta Science University"
+  RESULT_F_COURSE_CODE (RESULT_F_COURSE_CODE:Int:): "(NULL)"
+  RESULT_F_COURSE_NAME (RESULT_F_COURSE_NAME:UniChar.30:): "(NULL)"
+  RESULT_F_FACULTY_NO (RESULT_F_FACULTY_NO:Int:): "105"
+  RESULT_MARKS (RESULT_MARKS:Int:): "70"
+  RESULT_GRADE (RESULT_GRADE:UniChar.10:): "FAIL"
+  CREATED_DATE (CREATED_DATE:Date:): "04/09/2025 13:02:42.000000000"
+  CREATED_BY (CREATED_BY:UniChar.40:): "$CurrentMa"
+)
+
+WRITER_1_*_1> WRT_8167 [2025-04-09 13:02:42.849] Start loading table [CDW_UAS_ERR] at: Wed Apr 09 13:02:42 2025
+WRITER_1_*_1> WRT_8168 [2025-04-09 13:02:42.869] End loading table [CDW_UAS_STG_RESULT] at: Wed Apr 09 13:02:42 2025
+WRITER_1_*_1> WRT_8141 [2025-04-09 13:02:42.871] 
+Commit on end-of-data  Wed Apr 09 13:02:42 2025
+===================================================
+
+WRT_8036 Target: CDW_UAS_STG_RESULT (Instance Name: [CDW_UAS_STG_RESULT])
+WRT_8038 Inserted rows - Requested: 84         Applied: 0          Rejected: 84         Affected: 0         
+
+WRT_8036 Target: CDW_UAS_ERR (Instance Name: [CDW_UAS_ERR])
+WRT_8038 Inserted rows - Requested: 116        Applied: 116        Rejected: 0          Affected: 116       
+
+WRITER_1_*_1> WRT_8168 [2025-04-09 13:02:42.871] End loading table [CDW_UAS_ERR] at: Wed Apr 09 13:02:42 2025
+WRITER_1_*_1> WRT_8035 [2025-04-09 13:02:42.871] Load complete time: Wed Apr 09 13:02:42 2025
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: CDW_UAS_STG_RESULT (Instance Name: [CDW_UAS_STG_RESULT])
+WRT_8038 Inserted rows - Requested: 84         Applied: 0          Rejected: 84         Affected: 0         
+
+WRT_8036 Target: CDW_UAS_ERR (Instance Name: [CDW_UAS_ERR])
+WRT_8038 Inserted rows - Requested: 116        Applied: 116        Rejected: 0          Affected: 116       
+
+
+WRITER_1_*_1> WRT_8043 [2025-04-09 13:02:42.871] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2025-04-09 13:02:42.880] Writer run completed.
+MANAGER> PETL_24031 [2025-04-09 13:02:42.881] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [CDW_UAS_STG_RESULT, CDW_UAS_ERR] has completed. The total run time was insufficient for any meaningful statistics.
+
+MAPPING> CMN_1793 [2025-04-09 13:02:43.780] The index cache size that would hold [100] rows in the lookup table for [student], in memory, is [2800] bytes
+MAPPING> CMN_1792 [2025-04-09 13:02:43.780] The data cache size that would hold [100] rows in the lookup table for [student], in memory, is [16384] bytes
+MAPPING> CMN_1793 [2025-04-09 13:02:43.780] The index cache size that would hold [15] rows in the lookup table for [college], in memory, is [53248] bytes
+MAPPING> CMN_1792 [2025-04-09 13:02:43.780] The data cache size that would hold [15] rows in the lookup table for [college], in memory, is [16384] bytes
+MAPPING> CMN_1793 [2025-04-09 13:02:43.780] The index cache size that would hold [20] rows in the lookup table for [Faculty], in memory, is [53248] bytes
+MAPPING> CMN_1792 [2025-04-09 13:02:43.780] The data cache size that would hold [20] rows in the lookup table for [Faculty], in memory, is [16384] bytes
+MAPPING> CMN_1793 [2025-04-09 13:02:43.780] The index cache size that would hold [10] rows in the lookup table for [Department], in memory, is [2800] bytes
+MAPPING> CMN_1792 [2025-04-09 13:02:43.780] The data cache size that would hold [10] rows in the lookup table for [Department], in memory, is [16384] bytes
+MAPPING> CMN_1793 [2025-04-09 13:02:43.780] The index cache size that would hold [10] rows in the lookup table for [course], in memory, is [53248] bytes
+MAPPING> CMN_1792 [2025-04-09 13:02:43.780] The data cache size that would hold [10] rows in the lookup table for [course], in memory, is [16384] bytes
+MAPPING> CMN_1793 [2025-04-09 13:02:43.780] The index cache size that would hold [365] rows in the lookup table for [Time], in memory, is [30000] bytes
+MAPPING> CMN_1792 [2025-04-09 13:02:43.780] The data cache size that would hold [365] rows in the lookup table for [Time], in memory, is [24576] bytes
+MANAGER> PETL_24005 [2025-04-09 13:02:43.781] Starting post-session tasks. : (Wed Apr 09 13:02:43 2025)
+POST-SESS> PETL_24091 [2025-04-09 13:02:43.782] Thread [POST-SESS] has the ID [26].
+MANAGER> PETL_24029 [2025-04-09 13:02:43.858] Post-session task completed successfully. : (Wed Apr 09 13:02:43 2025)
+MAPPING> TE_7216 [2025-04-09 13:02:43.859] Deleting cache files [PMLKUP457412551_6_0W64] for transformation [student].
+MAPPING> TE_7216 [2025-04-09 13:02:43.860] Deleting cache files [PMLKUP457412551_7_0W64] for transformation [college].
+MAPPING> TE_7216 [2025-04-09 13:02:43.862] Deleting cache files [PMLKUP457412551_8_0W64] for transformation [Faculty].
+MAPPING> TE_7216 [2025-04-09 13:02:43.863] Deleting cache files [PMLKUP457412551_9_0W64] for transformation [Department].
+MAPPING> TE_7216 [2025-04-09 13:02:43.865] Deleting cache files [PMLKUP457412551_10_0W64] for transformation [course].
+MAPPING> TE_7216 [2025-04-09 13:02:43.866] Deleting cache files [PMLKUP457412551_11_0W64] for transformation [Time].
+MAPPING> TM_6018 [2025-04-09 13:02:43.866] The session completed with [0] row transformation errors. 
+MANAGER> PETL_24002 [2025-04-09 13:02:44.444] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2025-04-09 13:02:44.507] Session run completed successfully.
+DIRECTOR> TM_6022 [2025-04-09 13:02:44.507] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2025-04-09 13:02:44.507] Source Load Summary.
+DIRECTOR> CMN_1740 [2025-04-09 13:02:44.507] Table: [Source] (Instance Name: [Source] Instance UI Name: [Source])
+	 Output Rows [200], Affected Rows [200], Applied Rows [200], Rejected Rows [0]
+DIRECTOR> TM_6253 [2025-04-09 13:02:44.507] Target Load Summary.
+DIRECTOR> CMN_1740 [2025-04-09 13:02:44.507] Table: [CDW_UAS_STG_RESULT] (Instance Name: [CDW_UAS_STG_RESULT] Instance UI Name: [Target])
+	 Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [84]
+DIRECTOR> CMN_1740 [2025-04-09 13:02:44.507] Table: [CDW_UAS_ERR] (Instance Name: [CDW_UAS_ERR] Instance UI Name: [Target1])
+	 Output Rows [116], Affected Rows [116], Applied Rows [116], Rejected Rows [0]
+DIRECTOR> TM_6023 [2025-04-09 13:02:44.507] 
+===================================================
+
+DIRECTOR> TM_6020 [2025-04-09 13:02:44.507] Session [s_mtt_012X340Z00000000000E] completed at [Wed Apr 09 13:02:44 2025].
