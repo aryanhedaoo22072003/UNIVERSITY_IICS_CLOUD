@@ -1,0 +1,16 @@
+COLLEGE_CODE|COLLEGE_NAME|COLLEGE_STREET|COLLEGE_CITY|COLLEGE_STATE|COLLEGE_ZIP|COLLEGE_PHONE
+101|Alpha Institute of Technology|123 Tech Park|Mumbai|Maharashtra|400001|022-12345678
+102|Beta Engineering College|45 Industrial Road|Pune|Maharashtra|411002|020-87654321
+103|Gamma Arts College|78 Art Lane|Nagpur|Maharashtra|440003|0712-23456789
+104|Delta Science University|56 Science Avenue|Aurangabad|Maharashtra|431004|0240-34567890
+105|Epsilon Medical Institute|67 Health Blvd|Nashik|Maharashtra|422005|0253-45678901
+106|Zeta Management School|90 Biz Street|Kolhapur|Maharashtra|416006|0231-56789012
+107|Eta Polytechnic|11 Workshop Way|Thane|Maharashtra|400607|022-67890123
+108|Theta Design Academy|34 Creative Road|Satara|Maharashtra|415108|0216-78901234
+109|Iota Technical College|78 Machine Drive|Sangli|Maharashtra|416416|0233-89012345
+110|Kappa Law School|89 Justice Street|Amravati|Maharashtra|444604|0721-90123456
+111|Lambda School of Music|21 Melody Lane|Solapur|Maharashtra|413112|0217-12345678
+112|Mu Agricultural College|58 Farming Road|Ahmednagar|Maharashtra|414003|0241-23456789
+113|Nu Space Research Institute|44 Cosmos Alley|Latur|Maharashtra|413512|02382-34567890
+114|Omni Education Centre|19 Learning Circle|Jalgaon|Maharashtra|425001|0257-45678901
+115|Pi Culinary Academy|76 Taste Drive|Akola|Maharashtra|444001|0724-56789012
