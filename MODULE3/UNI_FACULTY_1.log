@@ -1,0 +1,255 @@
+Agent Group Id: 012X3425000000000003
+Agent Group Name: 7de95cd63cc45ef
+Agent Name: 7de95cd63cc45ef
+Agent Id: 012X3408000000000003
+Task Name: UNI_FACULTY
+Task Type: MTT_TEST
+Task Id: 012X340Z000000000004
+Run Id: 1
+Service Id: 1837519
+Started By: aryanhedaoo2003@gmail.com
+Run Context Type: ICS_UI
+04/02/2025 11:11:01 **** Importing Connection: Conn_012X340B00000000000I ...
+04/02/2025 11:11:01 **** Importing Source Definition: CDW_FACULTY_txt ...
+04/02/2025 11:11:01 **** Importing Target Definition: CDW_UAS_D_FACULTY_eccc7269d6ed1937beb9dde7ea4afd61b130ca5d ...
+04/02/2025 11:11:01 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  CDW_FACULTY_txt...
+    Validating Target Definition  CDW_UAS_D_FACULTY_eccc7269d6ed1937beb9dde7ea4afd61b130ca5d...
+04/02/2025 11:11:01 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Thousand Separator    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Decimal Separator    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Datetime Format    [transformation< Source > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+04/02/2025 11:11:01 **** Importing Workflow: wf_mtt_012X340Z000000000004 ...
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_012X340Z000000000004 > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_012X340Z000000000004].  Starting repository sequence id is [984749140]
+======================================================================
+DIRECTOR> VAR_27085 [2025-04-02 11:11:02.537] Parameter file [D:\apps\Data_Integration_Server\data\parameters\s_mtt_012X340Z000000000004.param] is opened for [session [wf_mtt_012X340Z000000000004.s_mtt_012X340Z000000000004]].
+DIRECTOR> VAR_27062 [2025-04-02 11:11:02.538] Warning! Cannot find section for worklet [wf_mtt_012X340Z000000000004] and folder [] in parameter file [D:\apps\Data_Integration_Server\data\parameters\s_mtt_012X340Z000000000004.param].
+DIRECTOR> TM_6014 [2025-04-02 11:11:02.539] Initializing session [s_mtt_012X340Z000000000004] at [Wed Apr 02 11:11:02 2025].
+DIRECTOR> TM_6683 [2025-04-02 11:11:02.539] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2025-04-02 11:11:02.539] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2025-04-02 11:11:02.541] Folder: []
+DIRECTOR> TM_6685 [2025-04-02 11:11:02.541] Workflow: [wf_mtt_012X340Z000000000004] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2025-04-02 11:11:02.541] Operating System Type [NT]
+DIRECTOR> TM_6101 [2025-04-02 11:11:02.541] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2025-04-02 11:11:02.541] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2025-04-02 11:11:02.542] Session [s_mtt_012X340Z000000000004] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0321].
+MANAGER> PETL_24091 [2025-04-02 11:11:04.680] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2025-04-02 11:11:04.681] Running Partition Group [1].
+MANAGER> PETL_24000 [2025-04-02 11:11:04.681] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2025-04-02 11:11:04.682] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2025-04-02 11:11:04.683] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2025-04-02 11:11:04.683] Initializing session run.
+MAPPING> PETL_24091 [2025-04-02 11:11:04.684] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2025-04-02 11:11:04.710] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2025-04-02 11:11:04.711] Server Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> TM_6151 [2025-04-02 11:11:04.711] The session sort order is [Binary].
+MAPPING> TM_6185 [2025-04-02 11:11:04.711] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65109 [2025-04-02 11:11:04.711] Current Timezone:[UTC +5:30]
+MAPPING> CMN_65111 [2025-04-02 11:11:04.711] Current Process ID:[12804]
+MAPPING> TM_6155 [2025-04-02 11:11:04.711] Using HIGH precision processing.
+MAPPING> TM_6180 [2025-04-02 11:11:04.711] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2025-04-02 11:11:04.711] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2025-04-02 11:11:04.712] DTM error log disabled. 
+MAPPING> TE_7022 [2025-04-02 11:11:04.713] TShmWriter: Initialized
+MAPPING> DBG_21075 [2025-04-02 11:11:04.758] Connecting to database [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa]
+MAPPING> CMN_1021 [2025-04-02 11:11:05.209] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;ValidateServerCertificate=0;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+MAPPING> CMN_1716 [2025-04-02 11:11:05.215] Lookup [Lookup] uses database connection [Relational:Conn_012X340B00000000000I] in code page [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> TM_6007 [2025-04-02 11:11:05.218] DTM initialized successfully for session [s_mtt_012X340Z000000000004]
+DIRECTOR> PETL_24033 [2025-04-02 11:11:05.220] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2025-04-02 11:11:05.220] Starting pre-session tasks. : (Wed Apr 02 11:11:05 2025)
+PRE-SESS> PETL_24091 [2025-04-02 11:11:05.221] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2025-04-02 11:11:05.418] Pre-session task completed successfully. : (Wed Apr 02 11:11:05 2025)
+DIRECTOR> PETL_24006 [2025-04-02 11:11:05.418] Starting data movement.
+DIRECTOR> TT_11183 [2025-04-02 11:11:05.418] Enabled using [1 (auto)] additional concurrent pipelines to build lookup caches. (Session likely will build or refresh [1] lookup caches; [0] on-demand only).
+MAPPING> TM_6660 [2025-04-02 11:11:05.420] Total Buffer Pool size is 8799360 bytes and Block size is 323680 bytes.
+LKPDP_1> PETL_24091 [2025-04-02 11:11:05.423] Thread [LKPDP_1] has the ID [5].
+LKPDP_1> DBG_21097 [2025-04-02 11:11:05.424] Lookup Transformation [Lookup]: Default sql to create lookup cache: SELECT FACULTY_NAME,FACULTY_DESIGNATION,FACULTY_QUALIFICATION,FACULTY_CODE FROM "dbo"."CDW_UAS_D_FACULTY" ORDER BY FACULTY_CODE
+
+LKPDP_1> TE_7212 [2025-04-02 11:11:05.427] Increasing [Index Cache] size for transformation [Lookup] from [178956970] to [178959600].
+LKPDP_1> TE_7212 [2025-04-02 11:11:05.427] Increasing [Data Cache] size for transformation [Lookup] from [357913940] to [357916672].
+DIRECTOR> TT_11184 [2025-04-02 11:11:05.441] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Lookup].
+LKPDP_1> TM_6660 [2025-04-02 11:11:05.442] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+READER_1_1_1> PETL_24091 [2025-04-02 11:11:05.444] Thread [READER_1_1_1] has the ID [6].
+LKPDP_1:READER_1_1> PETL_24091 [2025-04-02 11:11:05.444] Thread [LKPDP_1:READER_1_1] has the ID [7].
+READER_1_1_1> DBG_21437 [2025-04-02 11:11:05.536] Reader: Source is a file-based source.
+LKPDP_1:READER_1_1> DBG_21438 [2025-04-02 11:11:05.536] Reader: Source is [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa]
+READER_1_1_1> FR_3118 [2025-04-02 11:11:05.537] source [Source] code page: [UTF-8 encoding of Unicode]
+READER_1_1_1> FR_3071 [2025-04-02 11:11:05.537] Maximum Line sequential buffer length is 1026.
+LKPDP_1:READER_1_1> BLKR_16051 [2025-04-02 11:11:05.537] Source database connection [Conn_012X340B00000000000I] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+READER_1_1_1> BLKR_16003 [2025-04-02 11:11:05.537] Initialization completed successfully.
+TRANSF_1_1_1> PETL_24091 [2025-04-02 11:11:05.539] Thread [TRANSF_1_1_1] has the ID [8].
+WRITER_1_*_1> PETL_24091 [2025-04-02 11:11:05.541] Thread [WRITER_1_*_1] has the ID [9].
+WRITER_1_*_1> WRT_8147 [2025-04-02 11:11:05.543] Writer: Target is Database [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa], Bulk Mode [OFF]
+LKPDP_1:READER_1_1> CMN_1021 [2025-04-02 11:11:05.553] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;ValidateServerCertificate=0;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+LKPDP_1:READER_1_1> BLKR_16003 [2025-04-02 11:11:05.554] Initialization completed successfully.
+LKPDP_1:TRANSF_1_1> PETL_24091 [2025-04-02 11:11:05.554] Thread [LKPDP_1:TRANSF_1_1] has the ID [10].
+LKPDP_1:READER_1_1> BLKR_16007 [2025-04-02 11:11:05.555] Reader run started.
+LKPDP_1:READER_1_1> RR_4049 [2025-04-02 11:11:05.555] SQL Query issued to database : (Wed Apr 02 11:11:05 2025)
+LKPDP_1:READER_1_1> BLKR_16008 [2025-04-02 11:11:05.557] Reader run completed.
+LKPDP_1:TRANSF_1_1> DBG_21682 [2025-04-02 11:11:05.557] Lookup table row count : 0
+LKPDP_1:TRANSF_1_1> DBG_21297 [2025-04-02 11:11:05.557] Lookup cache row count : 0
+
+LKPDP_1:TRANSF_1_1> DBG_21294 [2025-04-02 11:11:05.557] Lookup cache creation completed : (Wed Apr 02 11:11:05 2025)
+LKPDP_1:TRANSF_1_1> CMN_1671 [2025-04-02 11:11:05.557] Created new cache files PMLKUP984749190_5_0W64.[dat/idx] in directory D:\apps\Data_Integration_Server\data\cache for Lookup [Lookup].
+LKPDP_1:TRANSF_1_1> DBG_21641 [2025-04-02 11:11:05.557] Lookup: Index cache size = [178959600], Data cache size = [357916672]
+LKPDP_1:TRANSF_1_1> DBG_21216 [2025-04-02 11:11:05.557] Finished transformations for Source Qualifier [Lookup{{DSQ}}]. Total errors [0] 
+DIRECTOR> TT_11185 [2025-04-02 11:11:05.558] No more lookup cache to build by additional concurrent pipeline in the current concurrent source set.
+WRITER_1_*_1> CMN_1021 [2025-04-02 11:11:05.559] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;ValidateServerCertificate=0;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+WRITER_1_*_1> WRT_8221 [2025-04-02 11:11:05.559] Target database connection [Conn_012X340B00000000000I] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+WRITER_1_*_1> WRT_8124 [2025-04-02 11:11:05.560] Target Table CDW_UAS_D_FACULTY :SQL INSERT statement:
+INSERT INTO dbo.CDW_UAS_D_FACULTY(FACULTY_CODE,FACULTY_NAME,FACULTY_DESIGNATION,FACULTY_QUALIFICATION)  VALUES ( ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2025-04-02 11:11:05.560] No column marked as primary key for table [CDW_UAS_D_FACULTY]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8147 [2025-04-02 11:11:05.561] Writer: Target is Database [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa], Bulk Mode [OFF]
+WRITER_1_*_1> WRT_8124 [2025-04-02 11:11:05.562] Target Table CDW_UAS_D_FACULTY :SQL INSERT statement:
+INSERT INTO dbo.CDW_UAS_D_FACULTY(FACULTY_CODE,FACULTY_NAME,FACULTY_DESIGNATION,FACULTY_QUALIFICATION)  VALUES ( ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2025-04-02 11:11:05.562] No column marked as primary key for table [CDW_UAS_D_FACULTY]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8270 [2025-04-02 11:11:05.562] Target connection group #1 consists of target(s) [CDW_UAS_D_FACULTY, CDW_UAS_D_FACULTY]
+WRITER_1_*_1> WRT_8003 [2025-04-02 11:11:05.562] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2025-04-02 11:11:05.562] Reader run started.
+WRITER_1_*_1> WRT_8005 [2025-04-02 11:11:05.562] Writer run started.
+WRITER_1_*_1> WRT_8158 [2025-04-02 11:11:05.562] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Wed Apr 02 11:11:05 2025
+
+Target tables:
+
+     CDW_UAS_D_FACULTY
+     CDW_UAS_D_FACULTY
+
+
+READER_1_1_1> _3120 [2025-04-02 11:11:05.562] Number of column in metadata are more than source file.
+READER_1_1_1> FR_3076 [2025-04-02 11:11:05.562] Skipped over [1] lines.
+READER_1_1_1> DBG_21430 [2025-04-02 11:11:05.562] Reading data from input source file [C:\Users\Administrator\Documents\Source\CDW_FACULTY.txt] : (Wed Apr 02 11:11:05 2025)
+READER_1_1_1> BLKR_16019 [2025-04-02 11:11:05.562] Read [20] rows, read [0] error rows for source table [CDW_FACULTY_txt] instance name [CDW_FACULTY_txt]
+READER_1_1_1> BLKR_16008 [2025-04-02 11:11:05.562] Reader run completed.
+TRANSF_1_1_1> CMN_1079 [2025-04-02 11:11:05.562] WARNING: Lookup table contains no data.
+TRANSF_1_1_1> DBG_21524 [2025-04-02 11:11:05.563] Transform : Lookup
+
+TRANSF_1_1_1> DBG_21313 [2025-04-02 11:11:05.563] Lookup table : "dbo"."CDW_UAS_D_FACULTY"
+
+TRANSF_1_1_1> DBG_21562 [2025-04-02 11:11:05.563] WARNING : Output rows from Lookup will be the default port value
+
+WRITER_1_*_1> WRT_8167 [2025-04-02 11:11:05.565] Start loading table [CDW_UAS_D_FACULTY] at: Wed Apr 02 11:11:05 2025
+TRANSF_1_1_1> DBG_21216 [2025-04-02 11:11:05.565] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2025-04-02 11:11:05.575] Start loading table [CDW_UAS_D_FACULTY] at: Wed Apr 02 11:11:05 2025
+WRITER_1_*_1> WRT_8168 [2025-04-02 11:11:05.575] End loading table [CDW_UAS_D_FACULTY] at: Wed Apr 02 11:11:05 2025
+WRITER_1_*_1> WRT_8141 [2025-04-02 11:11:05.576] 
+Commit on end-of-data  Wed Apr 02 11:11:05 2025
+===================================================
+
+WRT_8036 Target: CDW_UAS_D_FACULTY (Instance Name: [CDW_UAS_D_FACULTY])
+WRT_8038 Inserted rows - Requested: 20         Applied: 20         Rejected: 0          Affected: 20        
+
+WRT_8036 Target: CDW_UAS_D_FACULTY (Instance Name: [CDW_UAS_D_FACULTY_1])
+WRT_8044 No data loaded for this target
+
+
+WRITER_1_*_1> WRT_8168 [2025-04-02 11:11:05.576] End loading table [CDW_UAS_D_FACULTY] at: Wed Apr 02 11:11:05 2025
+WRITER_1_*_1> WRT_8035 [2025-04-02 11:11:05.576] Load complete time: Wed Apr 02 11:11:05 2025
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: CDW_UAS_D_FACULTY (Instance Name: [CDW_UAS_D_FACULTY])
+WRT_8038 Inserted rows - Requested: 20         Applied: 20         Rejected: 0          Affected: 20        
+
+WRT_8036 Target: CDW_UAS_D_FACULTY (Instance Name: [CDW_UAS_D_FACULTY_1])
+WRT_8044 No data loaded for this target
+
+
+
+WRITER_1_*_1> WRT_8043 [2025-04-02 11:11:05.576] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2025-04-02 11:11:05.581] Writer run completed.
+MANAGER> PETL_24031 [2025-04-02 11:11:05.582] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [CDW_UAS_D_FACULTY, CDW_UAS_D_FACULTY_1] has completed. The total run time was insufficient for any meaningful statistics.
+
+MAPPING> CMN_1793 [2025-04-02 11:11:05.820] The index cache size that would hold [0] rows in the lookup table for [Lookup], in memory, is [3600] bytes
+MAPPING> CMN_1792 [2025-04-02 11:11:05.820] The data cache size that would hold [0] rows in the lookup table for [Lookup], in memory, is [16384] bytes
+MANAGER> PETL_24005 [2025-04-02 11:11:05.822] Starting post-session tasks. : (Wed Apr 02 11:11:05 2025)
+POST-SESS> PETL_24091 [2025-04-02 11:11:05.824] Thread [POST-SESS] has the ID [11].
+MANAGER> PETL_24029 [2025-04-02 11:11:05.899] Post-session task completed successfully. : (Wed Apr 02 11:11:05 2025)
+MAPPING> TE_7216 [2025-04-02 11:11:05.903] Deleting cache files [PMLKUP984749190_5_0W64] for transformation [Lookup].
+MAPPING> TM_6018 [2025-04-02 11:11:05.904] The session completed with [0] row transformation errors. 
+MANAGER> PETL_24002 [2025-04-02 11:11:06.811] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2025-04-02 11:11:06.874] Session run completed successfully.
+DIRECTOR> TM_6022 [2025-04-02 11:11:06.874] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2025-04-02 11:11:06.874] Source Load Summary.
+DIRECTOR> CMN_1740 [2025-04-02 11:11:06.874] Table: [Source] (Instance Name: [Source] Instance UI Name: [Source])
+	 Output Rows [20], Affected Rows [20], Applied Rows [20], Rejected Rows [0]
+DIRECTOR> TM_6253 [2025-04-02 11:11:06.874] Target Load Summary.
+DIRECTOR> CMN_1740 [2025-04-02 11:11:06.874] Table: [CDW_UAS_D_FACULTY_eccc7269d6ed1937beb9dde7ea4afd61b130ca5d] (Instance Name: [CDW_UAS_D_FACULTY] Instance UI Name: [Target_Insert])
+	 Output Rows [20], Affected Rows [20], Applied Rows [20], Rejected Rows [0]
+DIRECTOR> CMN_1740 [2025-04-02 11:11:06.874] Table: [CDW_UAS_D_FACULTY_eccc7269d6ed1937beb9dde7ea4afd61b130ca5d] (Instance Name: [CDW_UAS_D_FACULTY_1] Instance UI Name: [Target_update])
+	 Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [0]
+DIRECTOR> TM_6023 [2025-04-02 11:11:06.874] 
+===================================================
+
+DIRECTOR> TM_6020 [2025-04-02 11:11:06.874] Session [s_mtt_012X340Z000000000004] completed at [Wed Apr 02 11:11:06 2025].
