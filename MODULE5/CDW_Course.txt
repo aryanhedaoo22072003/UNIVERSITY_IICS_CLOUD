@@ -1,0 +1,31 @@
+COURSE_CODE,COURSE_NAME,DEPARTMENT_NO,MARK_REQ
+1001,Computer Science,101,50
+1002,Mechanical Engineering,102,45
+1003,Electrical Engineering,103,48
+1004,Civil Engineering,104,50
+1005,Biotechnology,105,47
+1006,Chemical Engineering,106,46
+1007,Physics,107,49
+1008,Mathematics,108,50
+1009,Data Science,109,55
+1010,AI & Machine Learning,110,60
+1011,Economics,111,45
+1012,Statistics,112,50
+1013,Philosophy,113,42
+1014,Political Science,114,44
+1015,Psychology,115,48
+1016,Sociology,116,47
+1017,Environmental Science,117,49
+1018,Geology,118,45
+1019,History,119,43
+1020,Linguistics,120,46
+1021,Law,121,50
+1022,Medicine,122,60
+1023,Pharmacy,123,55
+1024,Nursing,124,50
+1025,Architecture,125,52
+1026,Aeronautical Engineering,126,51
+1027,Robotics,127,57
+1028,Artificial Intelligence,128,58
+1029,Blockchain,129,56
+1030,Cyber Security,130,54
