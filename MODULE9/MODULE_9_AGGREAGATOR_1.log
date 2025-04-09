@@ -1,0 +1,211 @@
+Agent Group Id: 012X3425000000000003
+Agent Group Name: 7de95cd63cc45ef
+Agent Name: 7de95cd63cc45ef
+Agent Id: 012X3408000000000003
+Task Name: MODULE_9_AGGREAGATOR
+Task Type: MTT_TEST
+Task Id: 012X340Z00000000000G
+Run Id: 1
+Service Id: 1837519
+Started By: aryanhedaoo2003@gmail.com
+Run Context Type: ICS_UI
+04/08/2025 02:36:56 **** Importing Connection: Conn_012X340B00000000000P ...
+04/08/2025 02:36:56 **** Importing Source Definition: CDW_UAS_F_RESULT_MODULE8 ...
+04/08/2025 02:36:56 **** Importing Target Definition: CDW_UAS_F_AGG_DATA_MODULE9 ...
+04/08/2025 02:36:56 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  CDW_UAS_F_RESULT_MODULE8...
+    Validating Target Definition  CDW_UAS_F_AGG_DATA_MODULE9...
+04/08/2025 02:36:56 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Thousand Separator    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Decimal Separator    [transformation< Source > ] 
+    <Warning> :  Invalid table attribute: Datetime Format    [transformation< Source > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+04/08/2025 02:36:56 **** Importing Workflow: wf_mtt_012X340Z00000000000G ...
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_012X340Z00000000000G > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_012X340Z00000000000G].  Starting repository sequence id is [395372807]
+======================================================================
+DIRECTOR> VAR_27085 [2025-04-08 02:36:56.874] Parameter file [D:\apps\Data_Integration_Server\data\parameters\s_mtt_012X340Z00000000000G.param] is opened for [session [wf_mtt_012X340Z00000000000G.s_mtt_012X340Z00000000000G]].
+DIRECTOR> VAR_27062 [2025-04-08 02:36:56.875] Warning! Cannot find section for worklet [wf_mtt_012X340Z00000000000G] and folder [] in parameter file [D:\apps\Data_Integration_Server\data\parameters\s_mtt_012X340Z00000000000G.param].
+DIRECTOR> TM_6014 [2025-04-08 02:36:56.876] Initializing session [s_mtt_012X340Z00000000000G] at [Tue Apr 08 02:36:56 2025].
+DIRECTOR> TM_6683 [2025-04-08 02:36:56.876] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2025-04-08 02:36:56.876] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2025-04-08 02:36:56.877] Folder: []
+DIRECTOR> TM_6685 [2025-04-08 02:36:56.877] Workflow: [wf_mtt_012X340Z00000000000G] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2025-04-08 02:36:56.877] Operating System Type [NT]
+DIRECTOR> TM_6101 [2025-04-08 02:36:56.877] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2025-04-08 02:36:56.877] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2025-04-08 02:36:56.878] Session [s_mtt_012X340Z00000000000G] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0321].
+MANAGER> PETL_24091 [2025-04-08 02:36:59.005] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2025-04-08 02:36:59.005] Running Partition Group [1].
+MANAGER> PETL_24000 [2025-04-08 02:36:59.005] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2025-04-08 02:36:59.005] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2025-04-08 02:36:59.006] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2025-04-08 02:36:59.006] Initializing session run.
+MAPPING> PETL_24091 [2025-04-08 02:36:59.006] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2025-04-08 02:36:59.008] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2025-04-08 02:36:59.008] Server Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> TM_6151 [2025-04-08 02:36:59.008] The session sort order is [Binary].
+MAPPING> TM_6185 [2025-04-08 02:36:59.008] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65109 [2025-04-08 02:36:59.008] Current Timezone:[UTC +5:30]
+MAPPING> CMN_65111 [2025-04-08 02:36:59.008] Current Process ID:[10652]
+MAPPING> TM_6155 [2025-04-08 02:36:59.008] Using HIGH precision processing.
+MAPPING> TM_6180 [2025-04-08 02:36:59.008] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2025-04-08 02:36:59.008] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2025-04-08 02:36:59.009] DTM error log disabled. 
+MAPPING> TE_7022 [2025-04-08 02:36:59.010] TShmWriter: Initialized
+MAPPING> DBG_21694 [2025-04-08 02:36:59.016] Aggregator Partition [0]: Index cache size = [1000000], Data cache size = [2000000]
+MAPPING> TE_7212 [2025-04-08 02:36:59.019] Increasing [Index Cache] size for transformation [Aggregator] from [1000000] to [1051648].
+MAPPING> TE_7212 [2025-04-08 02:36:59.019] Increasing [Data Cache] size for transformation [Aggregator] from [2000000] to [2097216].
+MAPPING> TE_7029 [2025-04-08 02:36:59.019] Aggregate Information: Creating New Index and Data Files
+MAPPING> TE_7034 [2025-04-08 02:36:59.019] Aggregate Information: Index file is [D:\apps\Data_Integration_Server\data\cache\PMAGG395372878_5_0.idx]
+MAPPING> TE_7035 [2025-04-08 02:36:59.019] Aggregate Information: Data file is [D:\apps\Data_Integration_Server\data\cache\PMAGG395372878_5_0.dat]
+MAPPING> TM_6007 [2025-04-08 02:36:59.020] DTM initialized successfully for session [s_mtt_012X340Z00000000000G]
+DIRECTOR> PETL_24033 [2025-04-08 02:36:59.245] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2025-04-08 02:36:59.245] Starting pre-session tasks. : (Tue Apr 08 02:36:59 2025)
+PRE-SESS> PETL_24091 [2025-04-08 02:36:59.246] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2025-04-08 02:36:59.314] Pre-session task completed successfully. : (Tue Apr 08 02:36:59 2025)
+DIRECTOR> PETL_24006 [2025-04-08 02:36:59.314] Starting data movement.
+MAPPING> TM_6660 [2025-04-08 02:36:59.315] Total Buffer Pool size is 1496128 bytes and Block size is 80896 bytes.
+READER_1_1_1> PETL_24091 [2025-04-08 02:36:59.317] Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1> DBG_21438 [2025-04-08 02:36:59.318] Reader: Source is [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa]
+READER_1_1_1> BLKR_16051 [2025-04-08 02:36:59.321] Source database connection [Conn_012X340B00000000000P] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+READER_1_1_1> CMN_1021 [2025-04-08 02:36:59.333] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+READER_1_1_1> BLKR_16003 [2025-04-08 02:36:59.333] Initialization completed successfully.
+TRANSF_1_1_1> PETL_24091 [2025-04-08 02:36:59.334] Thread [TRANSF_1_1_1] has the ID [6].
+WRITER_1_*_1> PETL_24091 [2025-04-08 02:36:59.335] Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1> WRT_8147 [2025-04-08 02:36:59.336] Writer: Target is Database [odbc://dbtype=SqlServer;host=localhost;port=1433;database=IICS_UNIVERSITY], Type [ODBC], User [sa], Bulk Mode [OFF]
+WRITER_1_*_1> CMN_1021 [2025-04-08 02:36:59.341] Database driver event...
+CMN_1021 [Reading driver properties from : D:\apps\Data_Integration_Server\72.0.2.1\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 SQL Server Wire Protocol for Informatica - BASE;DB=IICS_UNIVERSITY;HOST=localhost;PORT=1433;UID=sa;WorkArounds2=2;EQI=1;APP=Informatica;TimestampTruncationBehavior=1]. userid = [sa]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Microsoft SQL Server
+.
+DBMS Version:	13.00.6404
+.
+Driver Name:	dwsqls28.dll
+.
+Driver Version:	08.02.1018 (B0983, U0720)
+.
+Driver ODBC Version:	03.52
+.]
+
+WRITER_1_*_1> WRT_8221 [2025-04-08 02:36:59.341] Target database connection [Conn_012X340B00000000000P] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+WRITER_1_*_1> WRT_8124 [2025-04-08 02:36:59.343] Target Table CDW_UAS_F_AGG_DATA_MODULE9 :SQL INSERT statement:
+INSERT INTO dbo.CDW_UAS_F_AGG_DATA_MODULE9(CDW_RESULT_AGG_DSET_KEY,COLLEGE_CODE,COLLEGE_NAME,COURSE_CODE,COURSE_NAME,TOTAL_PASS,MAXIMUM_MARK,CREATED_DATE)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8124 [2025-04-08 02:36:59.343] Target Table CDW_UAS_F_AGG_DATA_MODULE9 :SQL UPDATE statement:
+UPDATE dbo.CDW_UAS_F_AGG_DATA_MODULE9 SET COLLEGE_CODE = ?, COLLEGE_NAME = ?, COURSE_CODE = ?, COURSE_NAME = ?, TOTAL_PASS = ?, MAXIMUM_MARK = ?, CREATED_DATE = ? WHERE CDW_RESULT_AGG_DSET_KEY = ?
+WRITER_1_*_1> WRT_8124 [2025-04-08 02:36:59.343] Target Table CDW_UAS_F_AGG_DATA_MODULE9 :SQL DELETE statement:
+DELETE FROM dbo.CDW_UAS_F_AGG_DATA_MODULE9 WHERE CDW_RESULT_AGG_DSET_KEY = ?
+WRITER_1_*_1> WRT_8270 [2025-04-08 02:36:59.344] Target connection group #1 consists of target(s) [CDW_UAS_F_AGG_DATA_MODULE9]
+WRITER_1_*_1> WRT_8003 [2025-04-08 02:36:59.344] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2025-04-08 02:36:59.344] Reader run started.
+WRITER_1_*_1> WRT_8005 [2025-04-08 02:36:59.344] Writer run started.
+WRITER_1_*_1> WRT_8158 [2025-04-08 02:36:59.344] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Tue Apr 08 02:36:59 2025
+
+Target tables:
+
+     CDW_UAS_F_AGG_DATA_MODULE9
+
+
+READER_1_1_1> RR_4010 [2025-04-08 02:36:59.344] SQ instance [Source] SQL Query [SELECT dbo.CDW_UAS_F_RESULT_MODULE8.CDW_P_RESULT_DSET_KEY, dbo.CDW_UAS_F_RESULT_MODULE8.RESULT_F_PERIOD_KEY, dbo.CDW_UAS_F_RESULT_MODULE8.RESULT_F_Student_KEY, dbo.CDW_UAS_F_RESULT_MODULE8.RESULT_F_DEPARTMENT_KEY, dbo.CDW_UAS_F_RESULT_MODULE8.RESULT_F_COLLEGE_CODE, dbo.CDW_UAS_F_RESULT_MODULE8.RESULT_F_COLLEGE_NAME, dbo.CDW_UAS_F_RESULT_MODULE8.RESULT_F_COURSE_CODE, dbo.CDW_UAS_F_RESULT_MODULE8.RESULT_F_COURSE_NAME, dbo.CDW_UAS_F_RESULT_MODULE8.RESULT_F_FACULTY_NO, dbo.CDW_UAS_F_RESULT_MODULE8.RESULT_MARKS, dbo.CDW_UAS_F_RESULT_MODULE8.RESULT_GRADE, dbo.CDW_UAS_F_RESULT_MODULE8.CREATED_DATE, dbo.CDW_UAS_F_RESULT_MODULE8.CREATED_BY FROM dbo.CDW_UAS_F_RESULT_MODULE8]
+READER_1_1_1> RR_4049 [2025-04-08 02:36:59.344] SQL Query issued to database : (Tue Apr 08 02:36:59 2025)
+READER_1_1_1> RR_4050 [2025-04-08 02:36:59.346] First row returned from database to reader : (Tue Apr 08 02:36:59 2025)
+READER_1_1_1> BLKR_16019 [2025-04-08 02:36:59.346] Read [84] rows, read [0] error rows for source table [CDW_UAS_F_RESULT_MODULE8] instance name [CDW_UAS_F_RESULT_MODULE8]
+READER_1_1_1> BLKR_16008 [2025-04-08 02:36:59.346] Reader run completed.
+TRANSF_1_1_1> TE_7032 [2025-04-08 02:36:59.351] The B-Tree being managed in files
+D:\apps\Data_Integration_Server\data\cache\PMAGG395372878_5_0.dat for Data and
+
+D:\apps\Data_Integration_Server\data\cache\PMAGG395372878_5_0.idx for Index has:
+	Index Size:	119
+	Row Size:	52
+	Order:		100
+	Minimum Order:	50
+	Height:		1
+	Entries:	16
+	IndexPageSize:	13312
+	IndexPages:	79
+	DataPageSize:	528
+	DataPages:	3972
+
+WRITER_1_*_1> WRT_8167 [2025-04-08 02:36:59.351] Start loading table [CDW_UAS_F_AGG_DATA_MODULE9] at: Tue Apr 08 02:36:59 2025
+TRANSF_1_1_1> DBG_21216 [2025-04-08 02:36:59.351] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> WRT_8168 [2025-04-08 02:36:59.356] End loading table [CDW_UAS_F_AGG_DATA_MODULE9] at: Tue Apr 08 02:36:59 2025
+WRITER_1_*_1> WRT_8141 [2025-04-08 02:36:59.358] 
+Commit on end-of-data  Tue Apr 08 02:36:59 2025
+===================================================
+
+WRT_8036 Target: CDW_UAS_F_AGG_DATA_MODULE9 (Instance Name: [CDW_UAS_F_AGG_DATA_MODULE9])
+WRT_8038 Inserted rows - Requested: 16         Applied: 16         Rejected: 0          Affected: 16        
+
+WRITER_1_*_1> WRT_8035 [2025-04-08 02:36:59.358] Load complete time: Tue Apr 08 02:36:59 2025
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: CDW_UAS_F_AGG_DATA_MODULE9 (Instance Name: [CDW_UAS_F_AGG_DATA_MODULE9])
+WRT_8038 Inserted rows - Requested: 16         Applied: 16         Rejected: 0          Affected: 16        
+
+
+WRITER_1_*_1> WRT_8043 [2025-04-08 02:36:59.358] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2025-04-08 02:36:59.360] Writer run completed.
+MANAGER> PETL_24031 [2025-04-08 02:36:59.361] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [CDW_UAS_F_AGG_DATA_MODULE9] has completed. The total run time was insufficient for any meaningful statistics.
+
+MAPPING> CMN_1791 [2025-04-08 02:36:59.456] The index cache size that would hold [16] aggregate groups of input rows for [Aggregator], in memory, is [13312] bytes
+MAPPING> CMN_1790 [2025-04-08 02:36:59.456] The data cache size that would hold [16] aggregate groups of input rows for [Aggregator], in memory, is [1056] bytes
+MANAGER> PETL_24005 [2025-04-08 02:36:59.456] Starting post-session tasks. : (Tue Apr 08 02:36:59 2025)
+POST-SESS> PETL_24091 [2025-04-08 02:36:59.457] Thread [POST-SESS] has the ID [8].
+MANAGER> PETL_24029 [2025-04-08 02:36:59.535] Post-session task completed successfully. : (Tue Apr 08 02:36:59 2025)
+MAPPING> TM_6018 [2025-04-08 02:36:59.535] The session completed with [0] row transformation errors. 
+MANAGER> TE_7216 [2025-04-08 02:36:59.597] Deleting cache files [D:\apps\Data_Integration_Server\data\cache\PMAGG395372878_5_0.idx] for transformation [Aggregator].
+MANAGER> TE_7216 [2025-04-08 02:36:59.598] Deleting cache files [D:\apps\Data_Integration_Server\data\cache\PMAGG395372878_5_0.dat] for transformation [Aggregator].
+MANAGER> PETL_24002 [2025-04-08 02:37:00.098] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2025-04-08 02:37:00.159] Session run completed successfully.
+DIRECTOR> TM_6022 [2025-04-08 02:37:00.159] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2025-04-08 02:37:00.159] Source Load Summary.
+DIRECTOR> CMN_1740 [2025-04-08 02:37:00.159] Table: [Source] (Instance Name: [Source] Instance UI Name: [Source])
+	 Output Rows [84], Affected Rows [84], Applied Rows [84], Rejected Rows [0]
+DIRECTOR> TM_6253 [2025-04-08 02:37:00.159] Target Load Summary.
+DIRECTOR> CMN_1740 [2025-04-08 02:37:00.159] Table: [CDW_UAS_F_AGG_DATA_MODULE9] (Instance Name: [CDW_UAS_F_AGG_DATA_MODULE9] Instance UI Name: [Target])
+	 Output Rows [16], Affected Rows [16], Applied Rows [16], Rejected Rows [0]
+DIRECTOR> TM_6023 [2025-04-08 02:37:00.159] 
+===================================================
+
+DIRECTOR> TM_6020 [2025-04-08 02:37:00.159] Session [s_mtt_012X340Z00000000000G] completed at [Tue Apr 08 02:37:00 2025].
