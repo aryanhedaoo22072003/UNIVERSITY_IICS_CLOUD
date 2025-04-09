@@ -1,0 +1,167 @@
+{
+  "name" : "UNIVERSITY_STU-1744174619937",
+  "sourceOrgId" : "1SBjX5hyLt1ixgw3LlaC8S",
+  "sourceOrgName" : "Aryan",
+  "exportedObjects" : [ {
+    "objectGuid" : "0KW72QWLkOecGzlcTEd8SO",
+    "objectName" : "UNIVERSITY_STU",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/Default/PROJECT1",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "012X341700000000000L"
+      },
+      "objectRefs" : [ "8tuodVwr6g2l5dKuN1dL2Z", "0am88osGTGfc0KbjJ3DJip", "fVThDOzG06Njqd3jTLxIAi" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "0IyegDoNNx2gopYZXoRF4V",
+    "objectName" : "PROJECT1",
+    "objectType" : "Folder",
+    "path" : "/Explore/Default",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "8tuodVwr6g2l5dKuN1dL2Z",
+    "objectName" : "CALENDER_SQL",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "012X340B00000000000P"
+      },
+      "objectRefs" : [ "8RKBKcPo82Oki2TEUYKtcv" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "3m0DvUIjInai63aGKjzMw6",
+    "objectName" : "Default",
+    "objectType" : "Project",
+    "path" : "/Explore",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "objectRefs" : [ ],
+      "contextAttributes" : [ {
+        "name" : "IS_DEF_LOC",
+        "value" : "true"
+      } ],
+      "additionalInfo" : {
+        "description" : "Auto-generated Default Project",
+        "contentType" : null,
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "0am88osGTGfc0KbjJ3DJip",
+    "objectName" : "CDW_UAS_College",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "012X340B000000000008"
+      },
+      "objectRefs" : [ "8RKBKcPo82Oki2TEUYKtcv" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "8RKBKcPo82Oki2TEUYKtcv",
+    "objectName" : "7de95cd63cc45ef",
+    "objectType" : "AgentGroup",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "012X3425000000000003"
+      },
+      "objectRefs" : [ ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "fVThDOzG06Njqd3jTLxIAi",
+    "objectName" : "CDW_UAS_Faculty",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "012X340B00000000000I"
+      },
+      "objectRefs" : [ "8RKBKcPo82Oki2TEUYKtcv" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  } ]
+}
